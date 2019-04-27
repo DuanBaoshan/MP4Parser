@@ -185,6 +185,7 @@ Until now MP4Parser support the following mp4 boxes:
         mp4Parser.outputBoxList();//Output to the stdout again.        
     }
 ```
+    
 **4. Add new box:**   
    (1).Add a new box class, if it is a container box, then inherits from class BoxContainer,
        or else inherits from class Box.  
@@ -195,6 +196,7 @@ Until now MP4Parser support the following mp4 boxes:
    (5).Implement the new box name in BoxFactory class in boxfactory.cpp, for example:
        const char* BoxFactory::FREE_BOX = "new_box";  
    (6).Return a new object from createBox() when use the new box name to create it.  
-**5.How to compile:**
-   (1).You can use CodeBlocks to open the Mp4Parser.cbp to compile on Window platform.
+      
+**5.How to compile:**   
+   (1).You can use CodeBlocks to open the Mp4Parser.cbp to compile on Window platform.   
    (2).You also can use make command to compile on Linux platform.
