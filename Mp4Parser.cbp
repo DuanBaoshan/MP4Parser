@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Mp4Parser" />
+		<Option makefile="makefile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="debug">
+				<Option output="bin/debug/Mp4Parser" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="e:\CodeBlocksProject\mp4\15sec_169_only.mp4   e:\CodeBlocksProject\mp4\result.txt" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG_ALL_PRINT_BUFFER_ON_" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="release">
+				<Option output="bin/release/Mp4Parser" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-D_RELEASE_VERSION_" />
+					<Add option="-D_DEBUG_LEVEL_=3" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/boxfactory.h" />
+		<Unit filename="include/debug.h" />
+		<Unit filename="include/errvalue.h" />
+		<Unit filename="include/mp4box.h" />
+		<Unit filename="include/mp4parser.h" />
+		<Unit filename="include/utils.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/audio_sample_entry_box.cpp" />
+		<Unit filename="src/box.cpp" />
+		<Unit filename="src/boxfactory.cpp" />
+		<Unit filename="src/boxlist.cpp" />
+		<Unit filename="src/cttsbox.cpp" />
+		<Unit filename="src/dimmbox.cpp" />
+		<Unit filename="src/dmaxbox.cpp" />
+		<Unit filename="src/dmedbox.cpp" />
+		<Unit filename="src/drefbox.cpp" />
+		<Unit filename="src/drepbox.cpp" />
+		<Unit filename="src/elstbox.cpp" />
+		<Unit filename="src/ftypbox.cpp" />
+		<Unit filename="src/hdlrbox.cpp" />
+		<Unit filename="src/hint_sample_entry_box.cpp" />
+		<Unit filename="src/hmhdbox.cpp" />
+		<Unit filename="src/maxrbox.cpp" />
+		<Unit filename="src/mdatbox.cpp" />
+		<Unit filename="src/mdhdbox.cpp" />
+		<Unit filename="src/mehdbox.cpp" />
+		<Unit filename="src/mfhdbox.cpp" />
+		<Unit filename="src/mp4parser.cpp" />
+		<Unit filename="src/mvhdbox.cpp" />
+		<Unit filename="src/namebox.cpp" />
+		<Unit filename="src/nmhdbox.cpp" />
+		<Unit filename="src/npckbox.cpp" />
+		<Unit filename="src/numpbox.cpp" />
+		<Unit filename="src/paytbox.cpp" />
+		<Unit filename="src/pmaxbox.cpp" />
+		<Unit filename="src/rtpbox.cpp" />
+		<Unit filename="src/sample_entry_box.cpp" />
+		<Unit filename="src/sdpbox.cpp" />
+		<Unit filename="src/smhdbox.cpp" />
+		<Unit filename="src/stcobox.cpp" />
+		<Unit filename="src/stscbox.cpp" />
+		<Unit filename="src/stsdbox.cpp" />
+		<Unit filename="src/stssbox.cpp" />
+		<Unit filename="src/stszbox.cpp" />
+		<Unit filename="src/sttsbox.cpp" />
+		<Unit filename="src/stypbox.cpp" />
+		<Unit filename="src/tfdtbox.cpp" />
+		<Unit filename="src/tfhdbox.cpp" />
+		<Unit filename="src/tkhdbox.cpp" />
+		<Unit filename="src/tmaxbox.cpp" />
+		<Unit filename="src/tminbox.cpp" />
+		<Unit filename="src/totlbox.cpp" />
+		<Unit filename="src/tpaybox.cpp" />
+		<Unit filename="src/tpylbox.cpp" />
+		<Unit filename="src/tref_typebox.cpp" />
+		<Unit filename="src/trexbox.cpp" />
+		<Unit filename="src/trpybox.cpp" />
+		<Unit filename="src/trunbox.cpp" />
+		<Unit filename="src/urlbox.cpp" />
+		<Unit filename="src/utils.cpp" />
+		<Unit filename="src/visual_sample_entry_box.cpp" />
+		<Unit filename="src/vmhdbox.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

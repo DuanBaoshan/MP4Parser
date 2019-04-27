@@ -1,0 +1,1010 @@
+# depslib dependency file v1.0
+1530259570 source:d:\codeblocksproject\mp4parser\src\audio_sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530265996 source:d:\codeblocksproject\mp4parser\src\box.cpp
+	<stdio.h>
+	<string.h>
+	<iostream>
+	"mp4box.h"
+	"boxfactory.h"
+	"errvalue.h"
+	"debug.h"
+
+1530259594 source:d:\codeblocksproject\mp4parser\src\boxfactory.cpp
+	"boxfactory.h"
+	"debug.h"
+
+1530259600 source:d:\codeblocksproject\mp4parser\src\boxlist.cpp
+	<string.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259608 source:d:\codeblocksproject\mp4parser\src\cttsbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259622 source:d:\codeblocksproject\mp4parser\src\dimmbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259700 source:d:\codeblocksproject\mp4parser\src\dmaxbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259698 source:d:\codeblocksproject\mp4parser\src\dmedbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259676 source:d:\codeblocksproject\mp4parser\src\drefbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259672 source:d:\codeblocksproject\mp4parser\src\drepbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259670 source:d:\codeblocksproject\mp4parser\src\elstbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259666 source:d:\codeblocksproject\mp4parser\src\ftypbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259664 source:d:\codeblocksproject\mp4parser\src\hdlrbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259660 source:d:\codeblocksproject\mp4parser\src\hint_sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259656 source:d:\codeblocksproject\mp4parser\src\hmhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259654 source:d:\codeblocksproject\mp4parser\src\maxrbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259650 source:d:\codeblocksproject\mp4parser\src\mdhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259648 source:d:\codeblocksproject\mp4parser\src\mehdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259644 source:d:\codeblocksproject\mp4parser\src\mfhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1531707416 source:d:\codeblocksproject\mp4parser\src\mp4parser.cpp
+	<stdio.h>
+	<iostream>
+	"mp4parser.h"
+	"utils.h"
+	"debug.h"
+
+1530259702 source:d:\codeblocksproject\mp4parser\src\mvhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259782 source:d:\codeblocksproject\mp4parser\src\namebox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259780 source:d:\codeblocksproject\mp4parser\src\nmhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259778 source:d:\codeblocksproject\mp4parser\src\npckbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259776 source:d:\codeblocksproject\mp4parser\src\numpbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259774 source:d:\codeblocksproject\mp4parser\src\paytbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259772 source:d:\codeblocksproject\mp4parser\src\pmaxbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259768 source:d:\codeblocksproject\mp4parser\src\rtpbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259766 source:d:\codeblocksproject\mp4parser\src\sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259748 source:d:\codeblocksproject\mp4parser\src\sdpbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259744 source:d:\codeblocksproject\mp4parser\src\smhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259742 source:d:\codeblocksproject\mp4parser\src\stcobox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259738 source:d:\codeblocksproject\mp4parser\src\stscbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259736 source:d:\codeblocksproject\mp4parser\src\stsdbox.cpp
+	<iostream>
+	<stdio.h>
+	"boxfactory.h"
+	"debug.h"
+
+1530259734 source:d:\codeblocksproject\mp4parser\src\stssbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259732 source:d:\codeblocksproject\mp4parser\src\stszbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259730 source:d:\codeblocksproject\mp4parser\src\sttsbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259726 source:d:\codeblocksproject\mp4parser\src\stypbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259724 source:d:\codeblocksproject\mp4parser\src\tfdtbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259722 source:d:\codeblocksproject\mp4parser\src\tfhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259718 source:d:\codeblocksproject\mp4parser\src\tkhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259786 source:d:\codeblocksproject\mp4parser\src\tmaxbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530265898 source:d:\codeblocksproject\mp4parser\src\tminbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259810 source:d:\codeblocksproject\mp4parser\src\totlbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259806 source:d:\codeblocksproject\mp4parser\src\tpaybox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259834 source:d:\codeblocksproject\mp4parser\src\tpylbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259832 source:d:\codeblocksproject\mp4parser\src\tref_typebox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259830 source:d:\codeblocksproject\mp4parser\src\trexbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259828 source:d:\codeblocksproject\mp4parser\src\trpybox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259826 source:d:\codeblocksproject\mp4parser\src\trunbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1530259824 source:d:\codeblocksproject\mp4parser\src\urlbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259822 source:d:\codeblocksproject\mp4parser\src\utils.cpp
+	<stdio.h>
+	"utils.h"
+	"errvalue.h"
+	"debug.h"
+
+1530259818 source:d:\codeblocksproject\mp4parser\src\visual_sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259816 source:d:\codeblocksproject\mp4parser\src\vmhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1553759025 source:d:\github\mp4parser\main.cpp
+	<inttypes.h>
+	<iostream>
+	"debug.h"
+	"mp4parser.h"
+
+1539574327 source:e:\github\mp4parser\main.cpp
+	<inttypes.h>
+	<iostream>
+	"debug.h"
+	"mp4parser.h"
+
+1537957897 source:e:\github\mp4parser\src\audio_sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1539573314 source:e:\github\mp4parser\src\boxfactory.cpp
+	"boxfactory.h"
+	"debug.h"
+
+1538211464 source:e:\github\mp4parser\src\boxlist.cpp
+	"mp4box.h"
+	"debug.h"
+
+1537960123 source:e:\github\mp4parser\src\cttsbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538014130 source:e:\github\mp4parser\src\dimmbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538014193 source:e:\github\mp4parser\src\dmaxbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538014398 source:e:\github\mp4parser\src\dmedbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1539330941 source:e:\github\mp4parser\src\drefbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538014478 source:e:\github\mp4parser\src\drepbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538018204 source:e:\github\mp4parser\src\elstbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1539332774 source:e:\github\mp4parser\src\ftypbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538121482 source:e:\github\mp4parser\src\hdlrbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538015334 source:e:\github\mp4parser\src\hmhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538015358 source:e:\github\mp4parser\src\maxrbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1539332766 source:e:\github\mp4parser\src\mdhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538018144 source:e:\github\mp4parser\src\mehdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538018159 source:e:\github\mp4parser\src\mfhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538119186 source:e:\github\mp4parser\src\mvhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538019488 source:e:\github\mp4parser\src\namebox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1531710433 source:e:\github\mp4parser\src\nmhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538019506 source:e:\github\mp4parser\src\npckbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538019522 source:e:\github\mp4parser\src\numpbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538042198 source:e:\github\mp4parser\src\paytbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538042234 source:e:\github\mp4parser\src\pmaxbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538042278 source:e:\github\mp4parser\src\rtpbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538042485 source:e:\github\mp4parser\src\sdpbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538042499 source:e:\github\mp4parser\src\smhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538042532 source:e:\github\mp4parser\src\stcobox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538042622 source:e:\github\mp4parser\src\stscbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1539328340 source:e:\github\mp4parser\src\stsdbox.cpp
+	<iostream>
+	<stdio.h>
+	"boxfactory.h"
+	"debug.h"
+
+1538042691 source:e:\github\mp4parser\src\stssbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538042747 source:e:\github\mp4parser\src\stszbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538043112 source:e:\github\mp4parser\src\sttsbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538043291 source:e:\github\mp4parser\src\stypbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538043303 source:e:\github\mp4parser\src\tfdtbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538043429 source:e:\github\mp4parser\src\tfhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538119794 source:e:\github\mp4parser\src\tkhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538121658 source:e:\github\mp4parser\src\tmaxbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538121621 source:e:\github\mp4parser\src\tminbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538043696 source:e:\github\mp4parser\src\totlbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538043716 source:e:\github\mp4parser\src\tpaybox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538043731 source:e:\github\mp4parser\src\tpylbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538043812 source:e:\github\mp4parser\src\tref_typebox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538044226 source:e:\github\mp4parser\src\trexbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538102556 source:e:\github\mp4parser\src\trpybox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538121581 source:e:\github\mp4parser\src\trunbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538103576 source:e:\github\mp4parser\src\urlbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1532079884 source:e:\github\mp4parser\src\utils.cpp
+	<stdio.h>
+	"utils.h"
+	"errvalue.h"
+	"debug.h"
+
+1538120337 source:e:\github\mp4parser\src\visual_sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538103769 source:e:\github\mp4parser\src\vmhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1539582358 source:e:\github\mp4parser\src\box.cpp
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<iomanip>
+	<fstream>
+	"mp4box.h"
+	"boxfactory.h"
+	"errvalue.h"
+	"debug.h"
+
+1532079884 source:e:\github\mp4parser\src\hint_sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1539249731 source:e:\github\mp4parser\src\mp4parser.cpp
+	<stdio.h>
+	<iostream>
+	"mp4parser.h"
+	"utils.h"
+	"debug.h"
+
+1538042370 source:e:\github\mp4parser\src\sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\audio_sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1553759025 source:d:\github\mp4parser\src\boxfactory.cpp
+	"boxfactory.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\boxlist.cpp
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\cttsbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\dimmbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\dmaxbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\dmedbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1553759025 source:d:\github\mp4parser\src\drefbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\drepbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\elstbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1553759025 source:d:\github\mp4parser\src\ftypbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\hdlrbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\hmhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\maxrbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\mdhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\mehdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\mfhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\mvhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\namebox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1530259780 source:d:\github\mp4parser\src\nmhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\npckbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\numpbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\paytbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\pmaxbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535214 source:d:\github\mp4parser\src\rtpbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\sdpbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\smhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\stcobox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\stscbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1553759025 source:d:\github\mp4parser\src\stsdbox.cpp
+	<iostream>
+	<stdio.h>
+	"boxfactory.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\stssbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\stszbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\sttsbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\stypbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\tfdtbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\tfhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\tkhdbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\tmaxbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\tminbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\totlbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\tpaybox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\tpylbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\tref_typebox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\trexbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\trpybox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\trunbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\urlbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\visual_sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\vmhdbox.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1553759025 source:d:\github\mp4parser\src\mp4parser.cpp
+	<stdio.h>
+	<iostream>
+	"mp4parser.h"
+	"utils.h"
+	"debug.h"
+
+1538535215 source:d:\github\mp4parser\src\sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1553759025 source:d:\github\mp4parser\src\box.cpp
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<iomanip>
+	<fstream>
+	"mp4box.h"
+	"boxfactory.h"
+	"errvalue.h"
+	"debug.h"
+
+1532078547 source:d:\github\mp4parser\src\hint_sample_entry_box.cpp
+	<iostream>
+	<stdio.h>
+	"mp4box.h"
+	"debug.h"
+
+1532077757 source:d:\github\mp4parser\src\utils.cpp
+	<stdio.h>
+	"utils.h"
+	"errvalue.h"
+	"debug.h"
+
+1539586963 e:\github\mp4parser\include\mp4box.h
+	<iostream>
+	<iomanip>
+	<fstream>
+	<stdio.h>
+	<inttypes.h>
+	<string>
+	<vector>
+	<memory>
+	<map>
+	"utils.h"
+	"errvalue.h"
+
+1531710433 e:\github\mp4parser\include\utils.h
+	<inttypes.h>
+
+1531710433 e:\github\mp4parser\include\errvalue.h
+
+1531710433 e:\github\mp4parser\include\debug.h
+	<string.h>
+
+1538448887 e:\github\mp4parser\include\boxfactory.h
+	"mp4box.h"
+
+1539337884 e:\github\mp4parser\include\mp4parser.h
+	<stdio.h>
+	<string>
+	<inttypes.h>
+	"errvalue.h"
+	"mp4box.h"
+	"boxfactory.h"
+
+1539573449 source:e:\github\mp4parser\src\mdatbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+
+1525336624 d:\github\mp4parser\include\debug.h
+	<string.h>
+
+1556382178 d:\github\mp4parser\include\mp4parser.h
+	<stdio.h>
+	<string>
+	<inttypes.h>
+	"errvalue.h"
+	"mp4box.h"
+	"boxfactory.h"
+
+1524907074 d:\github\mp4parser\include\errvalue.h
+
+1553759025 d:\github\mp4parser\include\mp4box.h
+	<iostream>
+	<iomanip>
+	<fstream>
+	<stdio.h>
+	<inttypes.h>
+	<string>
+	<vector>
+	<memory>
+	<map>
+	"utils.h"
+	"errvalue.h"
+
+1525246580 d:\github\mp4parser\include\utils.h
+	<inttypes.h>
+
+1538535214 d:\github\mp4parser\include\boxfactory.h
+	"mp4box.h"
+
+1553759025 source:d:\github\mp4parser\src\mdatbox.cpp
+	<iostream>
+	"mp4box.h"
+	"debug.h"
+

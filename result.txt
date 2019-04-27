@@ -1,0 +1,2271 @@
+File:'..\..\mp4\15sec_169_only.mp4'
+*******************************
+There are 4 tracks.
+Track ID:1
+    Duration:8976
+    Handler type:VIDE(0x76696465)
+    Handler Name:Imported with GPAC 0.4.6-DEV (internal rev. 8)
+    Language:'und'
+Track ID:2
+    Duration:8985
+    Handler type:SOUND(0x736F756E)
+    Handler Name:SoundHandler
+    Language:'und'
+Track ID:3
+    Duration:600
+    Handler type:ODSM(0x6F64736D)
+    Handler Name:GPAC MPEG-4 OD Handler
+    Language:'und'
+Track ID:4
+    Duration:600
+    Handler type:SDSM(0x7364736D)
+    Handler Name:GPAC MPEG-4 Scene Description Handler
+    Language:'und'
+*******************************
+MP4
+|
+|+++++++++++ftyp begin++++++++++++++
+|size:20
+|type:'ftyp'
+|file position:0
+|container:file
+|next_sibling:moov
+|body:
+|major_brand:'isom'
+|minor_version:''
+|compatible_brands:'isom'
+|-----------ftyp end--------------
+|
+|+++++++++++moov begin++++++++++++++
+|size:7778
+|type:'moov'
+|file position:20
+|container:file
+|next_sibling:mdat
+|body:
+|Has 6 sub box.
+|sub box 1:
+    |
+    |+++++++++++mvhd begin++++++++++++++
+    |size:108
+    |type:'mvhd'
+    |container:moov
+    |next_sibling:iods
+    |body:
+    |version:0
+    |flags:0x0
+    |creation_time:0xCD5CCD38
+    |modification_time:0xCD5CCD38
+    |timescale:600
+    |duration:8985
+    |rate:0x00010000
+    |volume:0x0100
+    |matrix:
+    |0x00010000    0x00000000    0x00000000
+    |0x00000000    0x00010000    0x00000000
+    |0x00000000    0x00000000    0x40000000
+    |next_track_id:5
+    |-----------mvhd end--------------
+|sub box 2:
+    |
+    |+++++++++++iods(unknown) begin++++++++++++++
+    |size:21
+    |type:'iods'
+    |container:moov
+    |next_sibling:trak
+    |body:
+    |total size:13
+    |0x00 0x00 0x00 0x00 0x10 0x07 0x00 0x4F 
+    |0xFF 0xFF 0x28 0xFF 0xFF 
+    |-----------iods end--------------
+|sub box 3:
+    |
+    |+++++++++++trak begin++++++++++++++
+    |size:4736
+    |type:'trak'
+    |container:moov
+    |next_sibling:trak
+    |body:
+    |Has 2 sub box.
+    |sub box 1:
+        |
+        |+++++++++++tkhd begin++++++++++++++
+        |size:92
+        |type:'tkhd'
+        |container:trak
+        |next_sibling:mdia
+        |body:
+        |version:0
+        |flags:0x1
+        |creation_time:0xCBB4241F
+        |modification_time:0xCD5CCD3A
+        |track_ID:1
+        |duration:8976
+        |layer:0
+        |alternate_group:0
+        |volume:0x0000
+        |matrix:
+        |0x00010000    0x00000000    0x00000000
+        |0x00000000    0x00010000    0x00000000
+        |0x00000000    0x00000000    0x40000000
+        |width:0x4000000
+        |height:0x2400000
+        |-----------tkhd end--------------
+    |sub box 2:
+        |
+        |+++++++++++mdia begin++++++++++++++
+        |size:4636
+        |type:'mdia'
+        |container:trak
+        |next_sibling:null
+        |body:
+        |Has 3 sub box.
+        |sub box 1:
+            |
+            |+++++++++++mdhd begin++++++++++++++
+            |size:32
+            |type:'mdhd'
+            |container:mdia
+            |next_sibling:hdlr
+            |body:
+            |version:0
+            |flags:0x0
+            |creation_time:3417580575
+            |modification_time:3445411128
+            |timescale:100
+            |duration:1496
+            |language:'und'
+            |-----------mdhd end--------------
+        |sub box 2:
+            |
+            |+++++++++++hdlr begin++++++++++++++
+            |size:79
+            |type:'hdlr'
+            |container:mdia
+            |next_sibling:minf
+            |body:
+            |version:0
+            |flags:0x0
+            |handler_type:'VIDE', 0x76696465
+            |name:'Imported with GPAC 0.4.6-DEV (internal rev. 8)'
+            |-----------hdlr end--------------
+        |sub box 3:
+            |
+            |+++++++++++minf begin++++++++++++++
+            |size:4517
+            |type:'minf'
+            |container:mdia
+            |next_sibling:null
+            |body:
+            |Has 3 sub box.
+            |sub box 1:
+                |
+                |+++++++++++vmhd begin++++++++++++++
+                |size:20
+                |type:'vmhd'
+                |container:minf
+                |next_sibling:dinf
+                |body:
+                |version:0
+                |flags:0x1
+                |graphicsmode:0
+                |opcolor:{0, 0, 0}
+                |-----------vmhd end--------------
+            |sub box 2:
+                |
+                |+++++++++++dinf begin++++++++++++++
+                |size:36
+                |type:'dinf'
+                |container:minf
+                |next_sibling:stbl
+                |body:
+                |Has 1 sub box.
+                |sub box 1:
+                    |
+                    |+++++++++++dref begin++++++++++++++
+                    |size:28
+                    |type:'dref'
+                    |container:dinf
+                    |next_sibling:null
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |entry_count:1
+                    |Has 1 sub box.
+                    |sub box 1:
+                        |
+                        |+++++++++++url  begin++++++++++++++
+                        |size:12
+                        |type:'url '
+                        |container:dref
+                        |next_sibling:null
+                        |body:
+                        |version:0
+                        |flags:0x1
+                        |locaction:''
+                        |-----------url  end--------------
+                    |-----------dref end--------------
+                |-----------dinf end--------------
+            |sub box 3:
+                |
+                |+++++++++++stbl begin++++++++++++++
+                |size:4453
+                |type:'stbl'
+                |container:minf
+                |next_sibling:null
+                |body:
+                |Has 7 sub box.
+                |sub box 1:
+                    |
+                    |+++++++++++stsd begin++++++++++++++
+                    |size:189
+                    |type:'stsd'
+                    |container:stbl
+                    |next_sibling:stts
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Handler is:'VIDE'
+                    |entry_count:1
+                    |Has 1 sub box.
+                    |sub box 1:
+                        |
+                        |+++++++++++avc1 begin++++++++++++++
+                        |size:173
+                        |type:'avc1'
+                        |container:stsd
+                        |next_sibling:null
+                        |body:
+                        |data_reference_index:1
+                        |width:720
+                        |height:576
+                        |horiz_resolution:0x00480000
+                        |vert_resolution:0x00480000
+                        |frame_count:1
+                        |compressor_name:''
+                        |depth:24
+                        |Has 2 sub box.
+                        |sub box 1:
+                            |
+                            |+++++++++++avcC(unknown) begin++++++++++++++
+                            |size:67
+                            |type:'avcC'
+                            |container:avc1
+                            |next_sibling:btrt
+                            |body:
+                            |total size:59
+                            |0x01 0x4D 0x40 0x1E 0xFF 0xE1 0x00 0x2B 
+                            |0x67 0x4D 0x40 0x1E 0xEC 0xA0 0x5A 0x12 
+                            |0x6F 0xFC 0x01 0x00 0x00 0xB6 0xD4 0x04 
+                            |0x08 0x05 0x00 0x00 0x03 0x00 0x01 0x00 
+                            |0x00 0x03 0x00 0x32 0xE0 0x20 0x00 0xF4 
+                            |0x24 0x00 0x1E 0x84 0xE2 0x93 0x00 0xF8 
+                            |0xA1 0x4C 0xD0 0x01 0x00 0x05 0x68 0xF9 
+                            |0x6B 0x2C 0x80 
+                            |-----------avcC end--------------
+                        |sub box 2:
+                            |
+                            |+++++++++++btrt(unknown) begin++++++++++++++
+                            |size:20
+                            |type:'btrt'
+                            |container:avc1
+                            |next_sibling:null
+                            |body:
+                            |total size:12
+                            |0x00 0x00 0xDE 0x97 0x00 0x14 0xA5 0x38 
+                            |0x00 0x0C 0xF4 0x80 
+                            |-----------btrt end--------------
+                        |-----------avc1 end--------------
+                    |-----------stsd end--------------
+                |sub box 2:
+                    |
+                    |+++++++++++stts begin++++++++++++++
+                    |size:24
+                    |type:'stts'
+                    |container:stbl
+                    |next_sibling:ctts
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Has 1 samples.
+                    |Sample 0:(count:374, delta:4)
+                    |-----------stts end--------------
+                |sub box 3:
+                    |
+                    |+++++++++++ctts begin++++++++++++++
+                    |size:2432
+                    |type:'ctts'
+                    |container:stbl
+                    |next_sibling:stss
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Has 302 samples.
+                    |Sample 0:(count:1, offset:12)
+                    |Sample 1:(count:1, offset:32)
+                    |Sample 2:(count:1, offset:16)
+                    |Sample 3:(count:2, offset:4)
+                    |Sample 4:(count:2, offset:8)
+                    |Sample 5:(count:1, offset:16)
+                    |Sample 6:(count:1, offset:8)
+                    |Sample 7:(count:1, offset:28)
+                    |Sample 8:(count:1, offset:16)
+                    |Sample 9:(count:2, offset:4)
+                    |Sample 10:(count:1, offset:8)
+                    |Sample 11:(count:1, offset:28)
+                    |Sample 12:(count:1, offset:16)
+                    |Sample 13:(count:2, offset:4)
+                    |Sample 14:(count:1, offset:8)
+                    |Sample 15:(count:2, offset:12)
+                    |Sample 16:(count:1, offset:24)
+                    |Sample 17:(count:1, offset:12)
+                    |Sample 18:(count:1, offset:4)
+                    |Sample 19:(count:1, offset:8)
+                    |Sample 20:(count:1, offset:12)
+                    |Sample 21:(count:1, offset:32)
+                    |Sample 22:(count:1, offset:16)
+                    |Sample 23:(count:2, offset:4)
+                    |Sample 24:(count:2, offset:8)
+                    |Sample 25:(count:1, offset:16)
+                    |Sample 26:(count:1, offset:8)
+                    |Sample 27:(count:2, offset:12)
+                    |Sample 28:(count:1, offset:32)
+                    |Sample 29:(count:1, offset:16)
+                    |Sample 30:(count:2, offset:4)
+                    |Sample 31:(count:2, offset:8)
+                    |Sample 32:(count:1, offset:24)
+                    |Sample 33:(count:1, offset:12)
+                    |Sample 34:(count:1, offset:4)
+                    |Sample 35:(count:1, offset:8)
+                    |Sample 36:(count:1, offset:24)
+                    |Sample 37:(count:1, offset:12)
+                    |Sample 38:(count:1, offset:4)
+                    |Sample 39:(count:1, offset:8)
+                    |Sample 40:(count:1, offset:12)
+                    |Sample 41:(count:1, offset:32)
+                    |Sample 42:(count:1, offset:16)
+                    |Sample 43:(count:2, offset:4)
+                    |Sample 44:(count:2, offset:8)
+                    |Sample 45:(count:1, offset:24)
+                    |Sample 46:(count:1, offset:12)
+                    |Sample 47:(count:1, offset:4)
+                    |Sample 48:(count:1, offset:8)
+                    |Sample 49:(count:1, offset:32)
+                    |Sample 50:(count:1, offset:16)
+                    |Sample 51:(count:2, offset:4)
+                    |Sample 52:(count:2, offset:8)
+                    |Sample 53:(count:1, offset:24)
+                    |Sample 54:(count:1, offset:12)
+                    |Sample 55:(count:1, offset:4)
+                    |Sample 56:(count:1, offset:8)
+                    |Sample 57:(count:1, offset:24)
+                    |Sample 58:(count:1, offset:12)
+                    |Sample 59:(count:1, offset:4)
+                    |Sample 60:(count:1, offset:8)
+                    |Sample 61:(count:1, offset:12)
+                    |Sample 62:(count:1, offset:32)
+                    |Sample 63:(count:1, offset:16)
+                    |Sample 64:(count:2, offset:4)
+                    |Sample 65:(count:2, offset:8)
+                    |Sample 66:(count:1, offset:24)
+                    |Sample 67:(count:1, offset:12)
+                    |Sample 68:(count:1, offset:4)
+                    |Sample 69:(count:1, offset:8)
+                    |Sample 70:(count:1, offset:32)
+                    |Sample 71:(count:1, offset:16)
+                    |Sample 72:(count:2, offset:4)
+                    |Sample 73:(count:2, offset:8)
+                    |Sample 74:(count:1, offset:24)
+                    |Sample 75:(count:1, offset:12)
+                    |Sample 76:(count:1, offset:4)
+                    |Sample 77:(count:1, offset:8)
+                    |Sample 78:(count:1, offset:24)
+                    |Sample 79:(count:1, offset:12)
+                    |Sample 80:(count:1, offset:4)
+                    |Sample 81:(count:1, offset:8)
+                    |Sample 82:(count:1, offset:12)
+                    |Sample 83:(count:1, offset:32)
+                    |Sample 84:(count:1, offset:16)
+                    |Sample 85:(count:2, offset:4)
+                    |Sample 86:(count:2, offset:8)
+                    |Sample 87:(count:1, offset:16)
+                    |Sample 88:(count:1, offset:8)
+                    |Sample 89:(count:1, offset:28)
+                    |Sample 90:(count:1, offset:16)
+                    |Sample 91:(count:2, offset:4)
+                    |Sample 92:(count:1, offset:8)
+                    |Sample 93:(count:1, offset:28)
+                    |Sample 94:(count:1, offset:16)
+                    |Sample 95:(count:2, offset:4)
+                    |Sample 96:(count:1, offset:8)
+                    |Sample 97:(count:1, offset:12)
+                    |Sample 98:(count:1, offset:28)
+                    |Sample 99:(count:1, offset:16)
+                    |Sample 100:(count:2, offset:4)
+                    |Sample 101:(count:1, offset:8)
+                    |Sample 102:(count:1, offset:12)
+                    |Sample 103:(count:1, offset:32)
+                    |Sample 104:(count:1, offset:16)
+                    |Sample 105:(count:2, offset:4)
+                    |Sample 106:(count:2, offset:8)
+                    |Sample 107:(count:1, offset:24)
+                    |Sample 108:(count:1, offset:12)
+                    |Sample 109:(count:1, offset:4)
+                    |Sample 110:(count:1, offset:8)
+                    |Sample 111:(count:1, offset:32)
+                    |Sample 112:(count:1, offset:16)
+                    |Sample 113:(count:2, offset:4)
+                    |Sample 114:(count:2, offset:8)
+                    |Sample 115:(count:1, offset:32)
+                    |Sample 116:(count:1, offset:16)
+                    |Sample 117:(count:2, offset:4)
+                    |Sample 118:(count:2, offset:8)
+                    |Sample 119:(count:1, offset:16)
+                    |Sample 120:(count:1, offset:8)
+                    |Sample 121:(count:1, offset:12)
+                    |Sample 122:(count:1, offset:32)
+                    |Sample 123:(count:1, offset:16)
+                    |Sample 124:(count:2, offset:4)
+                    |Sample 125:(count:2, offset:8)
+                    |Sample 126:(count:1, offset:32)
+                    |Sample 127:(count:1, offset:16)
+                    |Sample 128:(count:2, offset:4)
+                    |Sample 129:(count:2, offset:8)
+                    |Sample 130:(count:1, offset:32)
+                    |Sample 131:(count:1, offset:16)
+                    |Sample 132:(count:2, offset:4)
+                    |Sample 133:(count:2, offset:8)
+                    |Sample 134:(count:2, offset:12)
+                    |Sample 135:(count:1, offset:24)
+                    |Sample 136:(count:1, offset:12)
+                    |Sample 137:(count:1, offset:4)
+                    |Sample 138:(count:1, offset:8)
+                    |Sample 139:(count:1, offset:12)
+                    |Sample 140:(count:1, offset:32)
+                    |Sample 141:(count:1, offset:16)
+                    |Sample 142:(count:2, offset:4)
+                    |Sample 143:(count:2, offset:8)
+                    |Sample 144:(count:4, offset:12)
+                    |Sample 145:(count:1, offset:20)
+                    |Sample 146:(count:1, offset:12)
+                    |Sample 147:(count:1, offset:4)
+                    |Sample 148:(count:1, offset:32)
+                    |Sample 149:(count:1, offset:16)
+                    |Sample 150:(count:2, offset:4)
+                    |Sample 151:(count:2, offset:8)
+                    |Sample 152:(count:1, offset:28)
+                    |Sample 153:(count:1, offset:16)
+                    |Sample 154:(count:2, offset:4)
+                    |Sample 155:(count:1, offset:8)
+                    |Sample 156:(count:1, offset:12)
+                    |Sample 157:(count:1, offset:32)
+                    |Sample 158:(count:1, offset:16)
+                    |Sample 159:(count:2, offset:4)
+                    |Sample 160:(count:2, offset:8)
+                    |Sample 161:(count:1, offset:24)
+                    |Sample 162:(count:1, offset:12)
+                    |Sample 163:(count:1, offset:4)
+                    |Sample 164:(count:1, offset:8)
+                    |Sample 165:(count:1, offset:32)
+                    |Sample 166:(count:1, offset:16)
+                    |Sample 167:(count:2, offset:4)
+                    |Sample 168:(count:2, offset:8)
+                    |Sample 169:(count:1, offset:24)
+                    |Sample 170:(count:1, offset:12)
+                    |Sample 171:(count:1, offset:4)
+                    |Sample 172:(count:1, offset:8)
+                    |Sample 173:(count:1, offset:24)
+                    |Sample 174:(count:1, offset:12)
+                    |Sample 175:(count:1, offset:4)
+                    |Sample 176:(count:1, offset:8)
+                    |Sample 177:(count:1, offset:12)
+                    |Sample 178:(count:1, offset:32)
+                    |Sample 179:(count:1, offset:16)
+                    |Sample 180:(count:2, offset:4)
+                    |Sample 181:(count:2, offset:8)
+                    |Sample 182:(count:1, offset:24)
+                    |Sample 183:(count:1, offset:12)
+                    |Sample 184:(count:1, offset:4)
+                    |Sample 185:(count:1, offset:8)
+                    |Sample 186:(count:1, offset:32)
+                    |Sample 187:(count:1, offset:16)
+                    |Sample 188:(count:2, offset:4)
+                    |Sample 189:(count:2, offset:8)
+                    |Sample 190:(count:1, offset:24)
+                    |Sample 191:(count:1, offset:12)
+                    |Sample 192:(count:1, offset:4)
+                    |Sample 193:(count:1, offset:8)
+                    |Sample 194:(count:1, offset:24)
+                    |Sample 195:(count:1, offset:12)
+                    |Sample 196:(count:1, offset:4)
+                    |Sample 197:(count:1, offset:8)
+                    |Sample 198:(count:1, offset:12)
+                    |Sample 199:(count:1, offset:32)
+                    |Sample 200:(count:1, offset:16)
+                    |Sample 201:(count:2, offset:4)
+                    |Sample 202:(count:2, offset:8)
+                    |Sample 203:(count:1, offset:24)
+                    |Sample 204:(count:1, offset:12)
+                    |Sample 205:(count:1, offset:4)
+                    |Sample 206:(count:1, offset:8)
+                    |Sample 207:(count:1, offset:32)
+                    |Sample 208:(count:1, offset:16)
+                    |Sample 209:(count:2, offset:4)
+                    |Sample 210:(count:2, offset:8)
+                    |Sample 211:(count:1, offset:24)
+                    |Sample 212:(count:1, offset:12)
+                    |Sample 213:(count:1, offset:4)
+                    |Sample 214:(count:1, offset:8)
+                    |Sample 215:(count:1, offset:24)
+                    |Sample 216:(count:1, offset:12)
+                    |Sample 217:(count:1, offset:4)
+                    |Sample 218:(count:1, offset:8)
+                    |Sample 219:(count:1, offset:12)
+                    |Sample 220:(count:1, offset:32)
+                    |Sample 221:(count:1, offset:16)
+                    |Sample 222:(count:2, offset:4)
+                    |Sample 223:(count:2, offset:8)
+                    |Sample 224:(count:1, offset:24)
+                    |Sample 225:(count:1, offset:12)
+                    |Sample 226:(count:1, offset:4)
+                    |Sample 227:(count:1, offset:8)
+                    |Sample 228:(count:1, offset:32)
+                    |Sample 229:(count:1, offset:16)
+                    |Sample 230:(count:2, offset:4)
+                    |Sample 231:(count:2, offset:8)
+                    |Sample 232:(count:1, offset:24)
+                    |Sample 233:(count:1, offset:12)
+                    |Sample 234:(count:1, offset:4)
+                    |Sample 235:(count:1, offset:8)
+                    |Sample 236:(count:1, offset:24)
+                    |Sample 237:(count:1, offset:12)
+                    |Sample 238:(count:1, offset:4)
+                    |Sample 239:(count:1, offset:8)
+                    |Sample 240:(count:1, offset:12)
+                    |Sample 241:(count:1, offset:32)
+                    |Sample 242:(count:1, offset:16)
+                    |Sample 243:(count:2, offset:4)
+                    |Sample 244:(count:2, offset:8)
+                    |Sample 245:(count:1, offset:24)
+                    |Sample 246:(count:1, offset:12)
+                    |Sample 247:(count:1, offset:4)
+                    |Sample 248:(count:1, offset:8)
+                    |Sample 249:(count:1, offset:32)
+                    |Sample 250:(count:1, offset:16)
+                    |Sample 251:(count:2, offset:4)
+                    |Sample 252:(count:2, offset:8)
+                    |Sample 253:(count:1, offset:24)
+                    |Sample 254:(count:1, offset:12)
+                    |Sample 255:(count:1, offset:4)
+                    |Sample 256:(count:1, offset:8)
+                    |Sample 257:(count:1, offset:24)
+                    |Sample 258:(count:1, offset:12)
+                    |Sample 259:(count:1, offset:4)
+                    |Sample 260:(count:1, offset:8)
+                    |Sample 261:(count:1, offset:12)
+                    |Sample 262:(count:1, offset:32)
+                    |Sample 263:(count:1, offset:16)
+                    |Sample 264:(count:2, offset:4)
+                    |Sample 265:(count:2, offset:8)
+                    |Sample 266:(count:1, offset:24)
+                    |Sample 267:(count:1, offset:12)
+                    |Sample 268:(count:1, offset:4)
+                    |Sample 269:(count:1, offset:8)
+                    |Sample 270:(count:1, offset:32)
+                    |Sample 271:(count:1, offset:16)
+                    |Sample 272:(count:2, offset:4)
+                    |Sample 273:(count:2, offset:8)
+                    |Sample 274:(count:1, offset:24)
+                    |Sample 275:(count:1, offset:12)
+                    |Sample 276:(count:1, offset:4)
+                    |Sample 277:(count:1, offset:8)
+                    |Sample 278:(count:1, offset:24)
+                    |Sample 279:(count:1, offset:12)
+                    |Sample 280:(count:1, offset:4)
+                    |Sample 281:(count:1, offset:8)
+                    |Sample 282:(count:1, offset:12)
+                    |Sample 283:(count:1, offset:32)
+                    |Sample 284:(count:1, offset:16)
+                    |Sample 285:(count:2, offset:4)
+                    |Sample 286:(count:2, offset:8)
+                    |Sample 287:(count:1, offset:24)
+                    |Sample 288:(count:1, offset:12)
+                    |Sample 289:(count:1, offset:4)
+                    |Sample 290:(count:1, offset:8)
+                    |Sample 291:(count:1, offset:32)
+                    |Sample 292:(count:1, offset:16)
+                    |Sample 293:(count:2, offset:4)
+                    |Sample 294:(count:2, offset:8)
+                    |Sample 295:(count:1, offset:24)
+                    |Sample 296:(count:1, offset:12)
+                    |Sample 297:(count:1, offset:4)
+                    |Sample 298:(count:1, offset:8)
+                    |Sample 299:(count:1, offset:24)
+                    |Sample 300:(count:1, offset:12)
+                    |Sample 301:(count:1, offset:4)
+                    |-----------ctts end--------------
+                |sub box 4:
+                    |
+                    |+++++++++++stss begin++++++++++++++
+                    |size:76
+                    |type:'stss'
+                    |container:stbl
+                    |next_sibling:stsc
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |entry_count:15
+                    |sample_number[0]:1
+                    |sample_number[1]:26
+                    |sample_number[2]:51
+                    |sample_number[3]:76
+                    |sample_number[4]:101
+                    |sample_number[5]:126
+                    |sample_number[6]:151
+                    |sample_number[7]:176
+                    |sample_number[8]:201
+                    |sample_number[9]:226
+                    |sample_number[10]:251
+                    |sample_number[11]:276
+                    |sample_number[12]:301
+                    |sample_number[13]:326
+                    |sample_number[14]:351
+                    |-----------stss end--------------
+                |sub box 5:
+                    |
+                    |+++++++++++stsc begin++++++++++++++
+                    |size:64
+                    |type:'stsc'
+                    |container:stbl
+                    |next_sibling:stsz
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Has 4 chunks.
+                    |Chunk 1:(first_chunk:1, samples_per_chunk:13, sample_description_index:1)
+                    |Chunk 2:(first_chunk:2, samples_per_chunk:1, sample_description_index:1)
+                    |Chunk 3:(first_chunk:3, samples_per_chunk:12, sample_description_index:1)
+                    |Chunk 4:(first_chunk:32, samples_per_chunk:12, sample_description_index:1)
+                    |-----------stsc end--------------
+                |sub box 6:
+                    |
+                    |+++++++++++stsz begin++++++++++++++
+                    |size:1516
+                    |type:'stsz'
+                    |container:stbl
+                    |next_sibling:stco
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |sample_size:0
+                    |Has 374 entry_size.
+                    |entry_size[0]:15023
+                    |entry_size[1]:2427
+                    |entry_size[2]:604
+                    |entry_size[3]:209
+                    |entry_size[4]:255
+                    |entry_size[5]:276
+                    |entry_size[6]:170
+                    |entry_size[7]:6459
+                    |entry_size[8]:287
+                    |entry_size[9]:11256
+                    |entry_size[10]:183
+                    |entry_size[11]:359
+                    |entry_size[12]:268
+                    |entry_size[13]:328
+                    |entry_size[14]:4703
+                    |entry_size[15]:162
+                    |entry_size[16]:251
+                    |entry_size[17]:311
+                    |entry_size[18]:223
+                    |entry_size[19]:2622
+                    |entry_size[20]:3434
+                    |entry_size[21]:5855
+                    |entry_size[22]:196
+                    |entry_size[23]:175
+                    |entry_size[24]:261
+                    |entry_size[25]:24358
+                    |entry_size[26]:2731
+                    |entry_size[27]:143
+                    |entry_size[28]:122
+                    |entry_size[29]:141
+                    |entry_size[30]:157
+                    |entry_size[31]:144
+                    |entry_size[32]:5620
+                    |entry_size[33]:258
+                    |entry_size[34]:5326
+                    |entry_size[35]:4423
+                    |entry_size[36]:6604
+                    |entry_size[37]:350
+                    |entry_size[38]:171
+                    |entry_size[39]:342
+                    |entry_size[40]:288
+                    |entry_size[41]:318
+                    |entry_size[42]:4418
+                    |entry_size[43]:289
+                    |entry_size[44]:220
+                    |entry_size[45]:233
+                    |entry_size[46]:399
+                    |entry_size[47]:252
+                    |entry_size[48]:145
+                    |entry_size[49]:339
+                    |entry_size[50]:29668
+                    |entry_size[51]:257
+                    |entry_size[52]:181
+                    |entry_size[53]:159
+                    |entry_size[54]:137
+                    |entry_size[55]:197
+                    |entry_size[56]:172
+                    |entry_size[57]:3456
+                    |entry_size[58]:194
+                    |entry_size[59]:150
+                    |entry_size[60]:154
+                    |entry_size[61]:1078
+                    |entry_size[62]:384
+                    |entry_size[63]:191
+                    |entry_size[64]:266
+                    |entry_size[65]:303
+                    |entry_size[66]:329
+                    |entry_size[67]:527
+                    |entry_size[68]:420
+                    |entry_size[69]:354
+                    |entry_size[70]:333
+                    |entry_size[71]:387
+                    |entry_size[72]:295
+                    |entry_size[73]:178
+                    |entry_size[74]:403
+                    |entry_size[75]:32216
+                    |entry_size[76]:319
+                    |entry_size[77]:302
+                    |entry_size[78]:236
+                    |entry_size[79]:309
+                    |entry_size[80]:276
+                    |entry_size[81]:281
+                    |entry_size[82]:1575
+                    |entry_size[83]:287
+                    |entry_size[84]:178
+                    |entry_size[85]:187
+                    |entry_size[86]:248
+                    |entry_size[87]:413
+                    |entry_size[88]:173
+                    |entry_size[89]:402
+                    |entry_size[90]:294
+                    |entry_size[91]:327
+                    |entry_size[92]:437
+                    |entry_size[93]:333
+                    |entry_size[94]:277
+                    |entry_size[95]:281
+                    |entry_size[96]:340
+                    |entry_size[97]:222
+                    |entry_size[98]:137
+                    |entry_size[99]:292
+                    |entry_size[100]:33458
+                    |entry_size[101]:3344
+                    |entry_size[102]:416
+                    |entry_size[103]:265
+                    |entry_size[104]:389
+                    |entry_size[105]:149
+                    |entry_size[106]:300
+                    |entry_size[107]:6617
+                    |entry_size[108]:196
+                    |entry_size[109]:5568
+                    |entry_size[110]:108
+                    |entry_size[111]:248
+                    |entry_size[112]:162
+                    |entry_size[113]:230
+                    |entry_size[114]:4847
+                    |entry_size[115]:66
+                    |entry_size[116]:134
+                    |entry_size[117]:248
+                    |entry_size[118]:238
+                    |entry_size[119]:3842
+                    |entry_size[120]:5448
+                    |entry_size[121]:384
+                    |entry_size[122]:218
+                    |entry_size[123]:152
+                    |entry_size[124]:241
+                    |entry_size[125]:27907
+                    |entry_size[126]:2739
+                    |entry_size[127]:955
+                    |entry_size[128]:283
+                    |entry_size[129]:404
+                    |entry_size[130]:391
+                    |entry_size[131]:264
+                    |entry_size[132]:451
+                    |entry_size[133]:625
+                    |entry_size[134]:639
+                    |entry_size[135]:307
+                    |entry_size[136]:3672
+                    |entry_size[137]:1200
+                    |entry_size[138]:222
+                    |entry_size[139]:463
+                    |entry_size[140]:313
+                    |entry_size[141]:374
+                    |entry_size[142]:8163
+                    |entry_size[143]:1234
+                    |entry_size[144]:492
+                    |entry_size[145]:603
+                    |entry_size[146]:403
+                    |entry_size[147]:466
+                    |entry_size[148]:20949
+                    |entry_size[149]:274
+                    |entry_size[150]:9511
+                    |entry_size[151]:10103
+                    |entry_size[152]:346
+                    |entry_size[153]:288
+                    |entry_size[154]:326
+                    |entry_size[155]:238
+                    |entry_size[156]:250
+                    |entry_size[157]:17379
+                    |entry_size[158]:310
+                    |entry_size[159]:287
+                    |entry_size[160]:283
+                    |entry_size[161]:112
+                    |entry_size[162]:216
+                    |entry_size[163]:17061
+                    |entry_size[164]:348
+                    |entry_size[165]:217
+                    |entry_size[166]:323
+                    |entry_size[167]:189
+                    |entry_size[168]:330
+                    |entry_size[169]:8049
+                    |entry_size[170]:7113
+                    |entry_size[171]:13344
+                    |entry_size[172]:227
+                    |entry_size[173]:312
+                    |entry_size[174]:273
+                    |entry_size[175]:23904
+                    |entry_size[176]:22093
+                    |entry_size[177]:272
+                    |entry_size[178]:284
+                    |entry_size[179]:351
+                    |entry_size[180]:234
+                    |entry_size[181]:296
+                    |entry_size[182]:8255
+                    |entry_size[183]:7123
+                    |entry_size[184]:6816
+                    |entry_size[185]:7403
+                    |entry_size[186]:6870
+                    |entry_size[187]:276
+                    |entry_size[188]:188
+                    |entry_size[189]:5905
+                    |entry_size[190]:239
+                    |entry_size[191]:236
+                    |entry_size[192]:238
+                    |entry_size[193]:121
+                    |entry_size[194]:128
+                    |entry_size[195]:20409
+                    |entry_size[196]:334
+                    |entry_size[197]:266
+                    |entry_size[198]:219
+                    |entry_size[199]:133
+                    |entry_size[200]:52001
+                    |entry_size[201]:2845
+                    |entry_size[202]:176
+                    |entry_size[203]:189
+                    |entry_size[204]:116
+                    |entry_size[205]:164
+                    |entry_size[206]:133
+                    |entry_size[207]:12439
+                    |entry_size[208]:305
+                    |entry_size[209]:304
+                    |entry_size[210]:168
+                    |entry_size[211]:9579
+                    |entry_size[212]:409
+                    |entry_size[213]:190
+                    |entry_size[214]:288
+                    |entry_size[215]:210
+                    |entry_size[216]:226
+                    |entry_size[217]:11193
+                    |entry_size[218]:366
+                    |entry_size[219]:334
+                    |entry_size[220]:178
+                    |entry_size[221]:10907
+                    |entry_size[222]:422
+                    |entry_size[223]:276
+                    |entry_size[224]:218
+                    |entry_size[225]:53340
+                    |entry_size[226]:3651
+                    |entry_size[227]:155
+                    |entry_size[228]:158
+                    |entry_size[229]:130
+                    |entry_size[230]:141
+                    |entry_size[231]:123
+                    |entry_size[232]:11188
+                    |entry_size[233]:356
+                    |entry_size[234]:333
+                    |entry_size[235]:149
+                    |entry_size[236]:10221
+                    |entry_size[237]:406
+                    |entry_size[238]:170
+                    |entry_size[239]:279
+                    |entry_size[240]:235
+                    |entry_size[241]:205
+                    |entry_size[242]:11793
+                    |entry_size[243]:374
+                    |entry_size[244]:295
+                    |entry_size[245]:165
+                    |entry_size[246]:27800
+                    |entry_size[247]:380
+                    |entry_size[248]:279
+                    |entry_size[249]:245
+                    |entry_size[250]:40296
+                    |entry_size[251]:3888
+                    |entry_size[252]:191
+                    |entry_size[253]:202
+                    |entry_size[254]:199
+                    |entry_size[255]:154
+                    |entry_size[256]:130
+                    |entry_size[257]:12288
+                    |entry_size[258]:302
+                    |entry_size[259]:288
+                    |entry_size[260]:145
+                    |entry_size[261]:10553
+                    |entry_size[262]:380
+                    |entry_size[263]:200
+                    |entry_size[264]:284
+                    |entry_size[265]:218
+                    |entry_size[266]:188
+                    |entry_size[267]:12897
+                    |entry_size[268]:313
+                    |entry_size[269]:282
+                    |entry_size[270]:136
+                    |entry_size[271]:12746
+                    |entry_size[272]:424
+                    |entry_size[273]:255
+                    |entry_size[274]:221
+                    |entry_size[275]:53279
+                    |entry_size[276]:819
+                    |entry_size[277]:115
+                    |entry_size[278]:119
+                    |entry_size[279]:102
+                    |entry_size[280]:141
+                    |entry_size[281]:109
+                    |entry_size[282]:12302
+                    |entry_size[283]:285
+                    |entry_size[284]:257
+                    |entry_size[285]:167
+                    |entry_size[286]:10828
+                    |entry_size[287]:380
+                    |entry_size[288]:166
+                    |entry_size[289]:272
+                    |entry_size[290]:229
+                    |entry_size[291]:209
+                    |entry_size[292]:14088
+                    |entry_size[293]:364
+                    |entry_size[294]:315
+                    |entry_size[295]:179
+                    |entry_size[296]:32089
+                    |entry_size[297]:415
+                    |entry_size[298]:252
+                    |entry_size[299]:218
+                    |entry_size[300]:32759
+                    |entry_size[301]:3184
+                    |entry_size[302]:219
+                    |entry_size[303]:250
+                    |entry_size[304]:221
+                    |entry_size[305]:182
+                    |entry_size[306]:141
+                    |entry_size[307]:11142
+                    |entry_size[308]:203
+                    |entry_size[309]:218
+                    |entry_size[310]:124
+                    |entry_size[311]:12761
+                    |entry_size[312]:332
+                    |entry_size[313]:178
+                    |entry_size[314]:213
+                    |entry_size[315]:213
+                    |entry_size[316]:199
+                    |entry_size[317]:14073
+                    |entry_size[318]:294
+                    |entry_size[319]:248
+                    |entry_size[320]:112
+                    |entry_size[321]:9430
+                    |entry_size[322]:298
+                    |entry_size[323]:216
+                    |entry_size[324]:168
+                    |entry_size[325]:51044
+                    |entry_size[326]:642
+                    |entry_size[327]:157
+                    |entry_size[328]:134
+                    |entry_size[329]:139
+                    |entry_size[330]:124
+                    |entry_size[331]:105
+                    |entry_size[332]:14226
+                    |entry_size[333]:313
+                    |entry_size[334]:260
+                    |entry_size[335]:157
+                    |entry_size[336]:13101
+                    |entry_size[337]:391
+                    |entry_size[338]:186
+                    |entry_size[339]:248
+                    |entry_size[340]:238
+                    |entry_size[341]:220
+                    |entry_size[342]:9646
+                    |entry_size[343]:369
+                    |entry_size[344]:337
+                    |entry_size[345]:185
+                    |entry_size[346]:8769
+                    |entry_size[347]:272
+                    |entry_size[348]:233
+                    |entry_size[349]:186
+                    |entry_size[350]:53201
+                    |entry_size[351]:576
+                    |entry_size[352]:176
+                    |entry_size[353]:184
+                    |entry_size[354]:160
+                    |entry_size[355]:131
+                    |entry_size[356]:117
+                    |entry_size[357]:12736
+                    |entry_size[358]:273
+                    |entry_size[359]:264
+                    |entry_size[360]:172
+                    |entry_size[361]:14356
+                    |entry_size[362]:398
+                    |entry_size[363]:203
+                    |entry_size[364]:306
+                    |entry_size[365]:165
+                    |entry_size[366]:234
+                    |entry_size[367]:11239
+                    |entry_size[368]:284
+                    |entry_size[369]:278
+                    |entry_size[370]:157
+                    |entry_size[371]:14131
+                    |entry_size[372]:337
+                    |entry_size[373]:255
+                    |-----------stsz end--------------
+                |sub box 7:
+                    |
+                    |+++++++++++stco begin++++++++++++++
+                    |size:144
+                    |type:'stco'
+                    |container:stbl
+                    |next_sibling:null
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |entry_count:32
+                    |chunk_offset[0]:7806
+                    |chunk_offset[1]:52338
+                    |chunk_offset[2]:58009
+                    |chunk_offset[3]:106158
+                    |chunk_offset[4]:137946
+                    |chunk_offset[5]:150883
+                    |chunk_offset[6]:192271
+                    |chunk_offset[7]:201879
+                    |chunk_offset[8]:244236
+                    |chunk_offset[9]:253462
+                    |chunk_offset[10]:310219
+                    |chunk_offset[11]:331793
+                    |chunk_offset[12]:372102
+                    |chunk_offset[13]:395530
+                    |chunk_offset[14]:461552
+                    |chunk_offset[15]:494894
+                    |chunk_offset[16]:569225
+                    |chunk_offset[17]:618517
+                    |chunk_offset[18]:701043
+                    |chunk_offset[19]:742208
+                    |chunk_offset[20]:818044
+                    |chunk_offset[21]:847464
+                    |chunk_offset[22]:938854
+                    |chunk_offset[23]:969703
+                    |chunk_offset[24]:1057004
+                    |chunk_offset[25]:1087732
+                    |chunk_offset[26]:1177629
+                    |chunk_offset[27]:1209390
+                    |chunk_offset[28]:1291522
+                    |chunk_offset[29]:1326922
+                    |chunk_offset[30]:1353342
+                    |chunk_offset[31]:1441396
+                    |-----------stco end--------------
+                |-----------stbl end--------------
+            |-----------minf end--------------
+        |-----------mdia end--------------
+    |-----------trak end--------------
+|sub box 4:
+    |
+    |+++++++++++trak begin++++++++++++++
+    |size:2011
+    |type:'trak'
+    |container:moov
+    |next_sibling:trak
+    |body:
+    |Has 3 sub box.
+    |sub box 1:
+        |
+        |+++++++++++tkhd begin++++++++++++++
+        |size:92
+        |type:'tkhd'
+        |container:trak
+        |next_sibling:tref
+        |body:
+        |version:0
+        |flags:0xF
+        |creation_time:0x7C25B080
+        |modification_time:0xCD5CCD3A
+        |track_ID:2
+        |duration:8985
+        |layer:0
+        |alternate_group:1
+        |volume:0x0100
+        |matrix:
+        |0x00010000    0x00000000    0x00000000
+        |0x00000000    0x00010000    0x00000000
+        |0x00000000    0x00000000    0x40000000
+        |width:0x0
+        |height:0x0
+        |-----------tkhd end--------------
+    |sub box 2:
+        |
+        |+++++++++++tref begin++++++++++++++
+        |size:20
+        |type:'tref'
+        |container:trak
+        |next_sibling:mdia
+        |body:
+        |Has 1 sub box.
+        |sub box 1:
+            |
+            |+++++++++++sync begin++++++++++++++
+            |size:12
+            |type:'sync'
+            |container:tref
+            |next_sibling:null
+            |body:
+            |Has 1 trackIDs.
+            |trackIDs[0]:4
+            |-----------sync end--------------
+        |-----------tref end--------------
+    |sub box 3:
+        |
+        |+++++++++++mdia begin++++++++++++++
+        |size:1891
+        |type:'mdia'
+        |container:trak
+        |next_sibling:null
+        |body:
+        |Has 3 sub box.
+        |sub box 1:
+            |
+            |+++++++++++mdhd begin++++++++++++++
+            |size:32
+            |type:'mdhd'
+            |container:mdia
+            |next_sibling:hdlr
+            |body:
+            |version:0
+            |flags:0x0
+            |creation_time:2082844800
+            |modification_time:3445411130
+            |timescale:48000
+            |duration:718848
+            |language:'und'
+            |-----------mdhd end--------------
+        |sub box 2:
+            |
+            |+++++++++++hdlr begin++++++++++++++
+            |size:45
+            |type:'hdlr'
+            |container:mdia
+            |next_sibling:minf
+            |body:
+            |version:0
+            |flags:0x0
+            |handler_type:'SOUND', 0x736F756E
+            |name:'SoundHandler'
+            |-----------hdlr end--------------
+        |sub box 3:
+            |
+            |+++++++++++minf begin++++++++++++++
+            |size:1806
+            |type:'minf'
+            |container:mdia
+            |next_sibling:null
+            |body:
+            |Has 3 sub box.
+            |sub box 1:
+                |
+                |+++++++++++smhd begin++++++++++++++
+                |size:16
+                |type:'smhd'
+                |container:minf
+                |next_sibling:dinf
+                |body:
+                |version:0
+                |flags:0x0
+                |balance:0
+                |-----------smhd end--------------
+            |sub box 2:
+                |
+                |+++++++++++dinf begin++++++++++++++
+                |size:36
+                |type:'dinf'
+                |container:minf
+                |next_sibling:stbl
+                |body:
+                |Has 1 sub box.
+                |sub box 1:
+                    |
+                    |+++++++++++dref begin++++++++++++++
+                    |size:28
+                    |type:'dref'
+                    |container:dinf
+                    |next_sibling:null
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |entry_count:1
+                    |Has 1 sub box.
+                    |sub box 1:
+                        |
+                        |+++++++++++url  begin++++++++++++++
+                        |size:12
+                        |type:'url '
+                        |container:dref
+                        |next_sibling:null
+                        |body:
+                        |version:0
+                        |flags:0x1
+                        |locaction:''
+                        |-----------url  end--------------
+                    |-----------dref end--------------
+                |-----------dinf end--------------
+            |sub box 3:
+                |
+                |+++++++++++stbl begin++++++++++++++
+                |size:1746
+                |type:'stbl'
+                |container:minf
+                |next_sibling:null
+                |body:
+                |Has 5 sub box.
+                |sub box 1:
+                    |
+                    |+++++++++++stsd begin++++++++++++++
+                    |size:94
+                    |type:'stsd'
+                    |container:stbl
+                    |next_sibling:stts
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Handler is:'SOUND'
+                    |entry_count:1
+                    |Has 1 sub box.
+                    |sub box 1:
+                        |
+                        |+++++++++++mp4a begin++++++++++++++
+                        |size:78
+                        |type:'mp4a'
+                        |container:stsd
+                        |next_sibling:null
+                        |body:
+                        |data_reference_index:1
+                        |channel_count:2
+                        |sample_size:16
+                        |sample_rate:3145728000
+                        |Has 1 sub box.
+                        |sub box 1:
+                            |
+                            |+++++++++++esds(unknown) begin++++++++++++++
+                            |size:42
+                            |type:'esds'
+                            |container:mp4a
+                            |next_sibling:null
+                            |body:
+                            |total size:34
+                            |0x00 0x00 0x00 0x00 0x03 0x1C 0x00 0x00 
+                            |0x00 0x04 0x14 0x40 0x15 0x00 0x03 0x29 
+                            |0x00 0x01 0x9C 0x38 0x00 0x01 0x78 0x08 
+                            |0x05 0x05 0x13 0x10 0x56 0xE5 0x98 0x06 
+                            |0x01 0x02 
+                            |-----------esds end--------------
+                        |-----------mp4a end--------------
+                    |-----------stsd end--------------
+                |sub box 2:
+                    |
+                    |+++++++++++stts begin++++++++++++++
+                    |size:24
+                    |type:'stts'
+                    |container:stbl
+                    |next_sibling:stsc
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Has 1 samples.
+                    |Sample 0:(count:351, delta:2048)
+                    |-----------stts end--------------
+                |sub box 3:
+                    |
+                    |+++++++++++stsc begin++++++++++++++
+                    |size:52
+                    |type:'stsc'
+                    |container:stbl
+                    |next_sibling:stsz
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Has 3 chunks.
+                    |Chunk 1:(first_chunk:1, samples_per_chunk:12, sample_description_index:1)
+                    |Chunk 2:(first_chunk:2, samples_per_chunk:11, sample_description_index:1)
+                    |Chunk 3:(first_chunk:32, samples_per_chunk:9, sample_description_index:1)
+                    |-----------stsc end--------------
+                |sub box 4:
+                    |
+                    |+++++++++++stsz begin++++++++++++++
+                    |size:1424
+                    |type:'stsz'
+                    |container:stbl
+                    |next_sibling:stco
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |sample_size:0
+                    |Has 351 entry_size.
+                    |entry_size[0]:512
+                    |entry_size[1]:809
+                    |entry_size[2]:668
+                    |entry_size[3]:599
+                    |entry_size[4]:554
+                    |entry_size[5]:575
+                    |entry_size[6]:516
+                    |entry_size[7]:536
+                    |entry_size[8]:469
+                    |entry_size[9]:496
+                    |entry_size[10]:448
+                    |entry_size[11]:556
+                    |entry_size[12]:511
+                    |entry_size[13]:480
+                    |entry_size[14]:448
+                    |entry_size[15]:442
+                    |entry_size[16]:440
+                    |entry_size[17]:467
+                    |entry_size[18]:456
+                    |entry_size[19]:513
+                    |entry_size[20]:506
+                    |entry_size[21]:502
+                    |entry_size[22]:578
+                    |entry_size[23]:573
+                    |entry_size[24]:537
+                    |entry_size[25]:497
+                    |entry_size[26]:470
+                    |entry_size[27]:503
+                    |entry_size[28]:508
+                    |entry_size[29]:501
+                    |entry_size[30]:511
+                    |entry_size[31]:494
+                    |entry_size[32]:507
+                    |entry_size[33]:497
+                    |entry_size[34]:521
+                    |entry_size[35]:504
+                    |entry_size[36]:497
+                    |entry_size[37]:497
+                    |entry_size[38]:591
+                    |entry_size[39]:503
+                    |entry_size[40]:550
+                    |entry_size[41]:562
+                    |entry_size[42]:513
+                    |entry_size[43]:517
+                    |entry_size[44]:514
+                    |entry_size[45]:522
+                    |entry_size[46]:521
+                    |entry_size[47]:537
+                    |entry_size[48]:529
+                    |entry_size[49]:504
+                    |entry_size[50]:465
+                    |entry_size[51]:466
+                    |entry_size[52]:489
+                    |entry_size[53]:481
+                    |entry_size[54]:499
+                    |entry_size[55]:510
+                    |entry_size[56]:497
+                    |entry_size[57]:506
+                    |entry_size[58]:512
+                    |entry_size[59]:505
+                    |entry_size[60]:509
+                    |entry_size[61]:509
+                    |entry_size[62]:509
+                    |entry_size[63]:509
+                    |entry_size[64]:504
+                    |entry_size[65]:518
+                    |entry_size[66]:507
+                    |entry_size[67]:516
+                    |entry_size[68]:504
+                    |entry_size[69]:505
+                    |entry_size[70]:513
+                    |entry_size[71]:520
+                    |entry_size[72]:505
+                    |entry_size[73]:519
+                    |entry_size[74]:516
+                    |entry_size[75]:506
+                    |entry_size[76]:513
+                    |entry_size[77]:524
+                    |entry_size[78]:498
+                    |entry_size[79]:515
+                    |entry_size[80]:540
+                    |entry_size[81]:526
+                    |entry_size[82]:541
+                    |entry_size[83]:572
+                    |entry_size[84]:473
+                    |entry_size[85]:484
+                    |entry_size[86]:497
+                    |entry_size[87]:571
+                    |entry_size[88]:571
+                    |entry_size[89]:502
+                    |entry_size[90]:495
+                    |entry_size[91]:494
+                    |entry_size[92]:487
+                    |entry_size[93]:481
+                    |entry_size[94]:485
+                    |entry_size[95]:493
+                    |entry_size[96]:506
+                    |entry_size[97]:522
+                    |entry_size[98]:508
+                    |entry_size[99]:506
+                    |entry_size[100]:514
+                    |entry_size[101]:501
+                    |entry_size[102]:510
+                    |entry_size[103]:510
+                    |entry_size[104]:514
+                    |entry_size[105]:509
+                    |entry_size[106]:513
+                    |entry_size[107]:530
+                    |entry_size[108]:507
+                    |entry_size[109]:508
+                    |entry_size[110]:510
+                    |entry_size[111]:517
+                    |entry_size[112]:513
+                    |entry_size[113]:566
+                    |entry_size[114]:518
+                    |entry_size[115]:494
+                    |entry_size[116]:510
+                    |entry_size[117]:493
+                    |entry_size[118]:496
+                    |entry_size[119]:503
+                    |entry_size[120]:501
+                    |entry_size[121]:508
+                    |entry_size[122]:506
+                    |entry_size[123]:516
+                    |entry_size[124]:519
+                    |entry_size[125]:520
+                    |entry_size[126]:512
+                    |entry_size[127]:609
+                    |entry_size[128]:460
+                    |entry_size[129]:510
+                    |entry_size[130]:625
+                    |entry_size[131]:434
+                    |entry_size[132]:468
+                    |entry_size[133]:498
+                    |entry_size[134]:482
+                    |entry_size[135]:582
+                    |entry_size[136]:549
+                    |entry_size[137]:464
+                    |entry_size[138]:477
+                    |entry_size[139]:509
+                    |entry_size[140]:501
+                    |entry_size[141]:643
+                    |entry_size[142]:542
+                    |entry_size[143]:499
+                    |entry_size[144]:478
+                    |entry_size[145]:489
+                    |entry_size[146]:470
+                    |entry_size[147]:518
+                    |entry_size[148]:511
+                    |entry_size[149]:470
+                    |entry_size[150]:501
+                    |entry_size[151]:502
+                    |entry_size[152]:508
+                    |entry_size[153]:515
+                    |entry_size[154]:527
+                    |entry_size[155]:476
+                    |entry_size[156]:495
+                    |entry_size[157]:499
+                    |entry_size[158]:505
+                    |entry_size[159]:519
+                    |entry_size[160]:501
+                    |entry_size[161]:517
+                    |entry_size[162]:523
+                    |entry_size[163]:520
+                    |entry_size[164]:505
+                    |entry_size[165]:557
+                    |entry_size[166]:616
+                    |entry_size[167]:597
+                    |entry_size[168]:514
+                    |entry_size[169]:485
+                    |entry_size[170]:474
+                    |entry_size[171]:445
+                    |entry_size[172]:479
+                    |entry_size[173]:477
+                    |entry_size[174]:595
+                    |entry_size[175]:471
+                    |entry_size[176]:475
+                    |entry_size[177]:489
+                    |entry_size[178]:501
+                    |entry_size[179]:535
+                    |entry_size[180]:689
+                    |entry_size[181]:526
+                    |entry_size[182]:485
+                    |entry_size[183]:501
+                    |entry_size[184]:469
+                    |entry_size[185]:475
+                    |entry_size[186]:485
+                    |entry_size[187]:467
+                    |entry_size[188]:507
+                    |entry_size[189]:497
+                    |entry_size[190]:567
+                    |entry_size[191]:481
+                    |entry_size[192]:506
+                    |entry_size[193]:462
+                    |entry_size[194]:502
+                    |entry_size[195]:499
+                    |entry_size[196]:505
+                    |entry_size[197]:501
+                    |entry_size[198]:519
+                    |entry_size[199]:503
+                    |entry_size[200]:500
+                    |entry_size[201]:534
+                    |entry_size[202]:507
+                    |entry_size[203]:513
+                    |entry_size[204]:518
+                    |entry_size[205]:539
+                    |entry_size[206]:527
+                    |entry_size[207]:524
+                    |entry_size[208]:535
+                    |entry_size[209]:521
+                    |entry_size[210]:490
+                    |entry_size[211]:510
+                    |entry_size[212]:483
+                    |entry_size[213]:559
+                    |entry_size[214]:500
+                    |entry_size[215]:495
+                    |entry_size[216]:506
+                    |entry_size[217]:497
+                    |entry_size[218]:517
+                    |entry_size[219]:606
+                    |entry_size[220]:538
+                    |entry_size[221]:509
+                    |entry_size[222]:496
+                    |entry_size[223]:495
+                    |entry_size[224]:500
+                    |entry_size[225]:526
+                    |entry_size[226]:502
+                    |entry_size[227]:482
+                    |entry_size[228]:489
+                    |entry_size[229]:504
+                    |entry_size[230]:511
+                    |entry_size[231]:600
+                    |entry_size[232]:447
+                    |entry_size[233]:470
+                    |entry_size[234]:485
+                    |entry_size[235]:507
+                    |entry_size[236]:525
+                    |entry_size[237]:541
+                    |entry_size[238]:490
+                    |entry_size[239]:474
+                    |entry_size[240]:522
+                    |entry_size[241]:509
+                    |entry_size[242]:512
+                    |entry_size[243]:525
+                    |entry_size[244]:498
+                    |entry_size[245]:505
+                    |entry_size[246]:511
+                    |entry_size[247]:518
+                    |entry_size[248]:511
+                    |entry_size[249]:508
+                    |entry_size[250]:525
+                    |entry_size[251]:564
+                    |entry_size[252]:524
+                    |entry_size[253]:519
+                    |entry_size[254]:500
+                    |entry_size[255]:505
+                    |entry_size[256]:521
+                    |entry_size[257]:572
+                    |entry_size[258]:592
+                    |entry_size[259]:497
+                    |entry_size[260]:571
+                    |entry_size[261]:456
+                    |entry_size[262]:464
+                    |entry_size[263]:476
+                    |entry_size[264]:472
+                    |entry_size[265]:494
+                    |entry_size[266]:508
+                    |entry_size[267]:523
+                    |entry_size[268]:489
+                    |entry_size[269]:515
+                    |entry_size[270]:530
+                    |entry_size[271]:563
+                    |entry_size[272]:483
+                    |entry_size[273]:486
+                    |entry_size[274]:517
+                    |entry_size[275]:492
+                    |entry_size[276]:502
+                    |entry_size[277]:537
+                    |entry_size[278]:495
+                    |entry_size[279]:546
+                    |entry_size[280]:668
+                    |entry_size[281]:464
+                    |entry_size[282]:467
+                    |entry_size[283]:473
+                    |entry_size[284]:478
+                    |entry_size[285]:473
+                    |entry_size[286]:493
+                    |entry_size[287]:512
+                    |entry_size[288]:508
+                    |entry_size[289]:512
+                    |entry_size[290]:606
+                    |entry_size[291]:474
+                    |entry_size[292]:500
+                    |entry_size[293]:518
+                    |entry_size[294]:502
+                    |entry_size[295]:496
+                    |entry_size[296]:503
+                    |entry_size[297]:659
+                    |entry_size[298]:613
+                    |entry_size[299]:551
+                    |entry_size[300]:465
+                    |entry_size[301]:471
+                    |entry_size[302]:478
+                    |entry_size[303]:496
+                    |entry_size[304]:499
+                    |entry_size[305]:583
+                    |entry_size[306]:488
+                    |entry_size[307]:484
+                    |entry_size[308]:496
+                    |entry_size[309]:500
+                    |entry_size[310]:618
+                    |entry_size[311]:449
+                    |entry_size[312]:470
+                    |entry_size[313]:498
+                    |entry_size[314]:478
+                    |entry_size[315]:496
+                    |entry_size[316]:577
+                    |entry_size[317]:461
+                    |entry_size[318]:484
+                    |entry_size[319]:620
+                    |entry_size[320]:454
+                    |entry_size[321]:480
+                    |entry_size[322]:525
+                    |entry_size[323]:552
+                    |entry_size[324]:479
+                    |entry_size[325]:480
+                    |entry_size[326]:485
+                    |entry_size[327]:483
+                    |entry_size[328]:488
+                    |entry_size[329]:620
+                    |entry_size[330]:485
+                    |entry_size[331]:480
+                    |entry_size[332]:515
+                    |entry_size[333]:500
+                    |entry_size[334]:527
+                    |entry_size[335]:602
+                    |entry_size[336]:599
+                    |entry_size[337]:564
+                    |entry_size[338]:570
+                    |entry_size[339]:437
+                    |entry_size[340]:449
+                    |entry_size[341]:465
+                    |entry_size[342]:474
+                    |entry_size[343]:497
+                    |entry_size[344]:531
+                    |entry_size[345]:568
+                    |entry_size[346]:616
+                    |entry_size[347]:532
+                    |entry_size[348]:577
+                    |entry_size[349]:516
+                    |entry_size[350]:517
+                    |-----------stsz end--------------
+                |sub box 5:
+                    |
+                    |+++++++++++stco begin++++++++++++++
+                    |size:144
+                    |type:'stco'
+                    |container:stbl
+                    |next_sibling:null
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |entry_count:32
+                    |chunk_offset[0]:45582
+                    |chunk_offset[1]:52666
+                    |chunk_offset[2]:100560
+                    |chunk_offset[3]:132177
+                    |chunk_offset[4]:145360
+                    |chunk_offset[5]:186686
+                    |chunk_offset[6]:196238
+                    |chunk_offset[7]:238448
+                    |chunk_offset[8]:247983
+                    |chunk_offset[9]:304593
+                    |chunk_offset[10]:326174
+                    |chunk_offset[11]:366423
+                    |chunk_offset[12]:389784
+                    |chunk_offset[13]:456063
+                    |chunk_offset[14]:489277
+                    |chunk_offset[15]:563597
+                    |chunk_offset[16]:612895
+                    |chunk_offset[17]:695497
+                    |chunk_offset[18]:736487
+                    |chunk_offset[19]:812343
+                    |chunk_offset[20]:841850
+                    |chunk_offset[21]:933372
+                    |chunk_offset[22]:963995
+                    |chunk_offset[23]:1051378
+                    |chunk_offset[24]:1082132
+                    |chunk_offset[25]:1172033
+                    |chunk_offset[26]:1203600
+                    |chunk_offset[27]:1285898
+                    |chunk_offset[28]:1321271
+                    |chunk_offset[29]:1347811
+                    |chunk_offset[30]:1435688
+                    |chunk_offset[31]:1469383
+                    |-----------stco end--------------
+                |-----------stbl end--------------
+            |-----------minf end--------------
+        |-----------mdia end--------------
+    |-----------trak end--------------
+|sub box 5:
+    |
+    |+++++++++++trak begin++++++++++++++
+    |size:452
+    |type:'trak'
+    |container:moov
+    |next_sibling:trak
+    |body:
+    |Has 3 sub box.
+    |sub box 1:
+        |
+        |+++++++++++tkhd begin++++++++++++++
+        |size:92
+        |type:'tkhd'
+        |container:trak
+        |next_sibling:tref
+        |body:
+        |version:0
+        |flags:0x1
+        |creation_time:0xCD5CCD38
+        |modification_time:0xCD5CCD3A
+        |track_ID:3
+        |duration:600
+        |layer:0
+        |alternate_group:0
+        |volume:0x0000
+        |matrix:
+        |0x00010000    0x00000000    0x00000000
+        |0x00000000    0x00010000    0x00000000
+        |0x00000000    0x00000000    0x40000000
+        |width:0x0
+        |height:0x0
+        |-----------tkhd end--------------
+    |sub box 2:
+        |
+        |+++++++++++tref begin++++++++++++++
+        |size:32
+        |type:'tref'
+        |container:trak
+        |next_sibling:mdia
+        |body:
+        |Has 2 sub box.
+        |sub box 1:
+            |
+            |+++++++++++sync begin++++++++++++++
+            |size:12
+            |type:'sync'
+            |container:tref
+            |next_sibling:mpod
+            |body:
+            |Has 1 trackIDs.
+            |trackIDs[0]:4
+            |-----------sync end--------------
+        |sub box 2:
+            |
+            |+++++++++++mpod(unknown) begin++++++++++++++
+            |size:12
+            |type:'mpod'
+            |container:tref
+            |next_sibling:null
+            |body:
+            |total size:4
+            |0x00 0x00 0x00 0x02 
+            |-----------mpod end--------------
+        |-----------tref end--------------
+    |sub box 3:
+        |
+        |+++++++++++mdia begin++++++++++++++
+        |size:320
+        |type:'mdia'
+        |container:trak
+        |next_sibling:null
+        |body:
+        |Has 3 sub box.
+        |sub box 1:
+            |
+            |+++++++++++mdhd begin++++++++++++++
+            |size:32
+            |type:'mdhd'
+            |container:mdia
+            |next_sibling:hdlr
+            |body:
+            |version:0
+            |flags:0x0
+            |creation_time:3445411128
+            |modification_time:3445411130
+            |timescale:600
+            |duration:600
+            |language:'und'
+            |-----------mdhd end--------------
+        |sub box 2:
+            |
+            |+++++++++++hdlr begin++++++++++++++
+            |size:55
+            |type:'hdlr'
+            |container:mdia
+            |next_sibling:minf
+            |body:
+            |version:0
+            |flags:0x0
+            |handler_type:'ODSM', 0x6F64736D
+            |name:'GPAC MPEG-4 OD Handler'
+            |-----------hdlr end--------------
+        |sub box 3:
+            |
+            |+++++++++++minf begin++++++++++++++
+            |size:225
+            |type:'minf'
+            |container:mdia
+            |next_sibling:null
+            |body:
+            |Has 3 sub box.
+            |sub box 1:
+                |
+                |+++++++++++nmhd begin++++++++++++++
+                |size:12
+                |type:'nmhd'
+                |container:minf
+                |next_sibling:dinf
+                |body:
+                |version:0
+                |flags:0x0
+                |-----------nmhd end--------------
+            |sub box 2:
+                |
+                |+++++++++++dinf begin++++++++++++++
+                |size:36
+                |type:'dinf'
+                |container:minf
+                |next_sibling:stbl
+                |body:
+                |Has 1 sub box.
+                |sub box 1:
+                    |
+                    |+++++++++++dref begin++++++++++++++
+                    |size:28
+                    |type:'dref'
+                    |container:dinf
+                    |next_sibling:null
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |entry_count:1
+                    |Has 1 sub box.
+                    |sub box 1:
+                        |
+                        |+++++++++++url  begin++++++++++++++
+                        |size:12
+                        |type:'url '
+                        |container:dref
+                        |next_sibling:null
+                        |body:
+                        |version:0
+                        |flags:0x1
+                        |locaction:''
+                        |-----------url  end--------------
+                    |-----------dref end--------------
+                |-----------dinf end--------------
+            |sub box 3:
+                |
+                |+++++++++++stbl begin++++++++++++++
+                |size:169
+                |type:'stbl'
+                |container:minf
+                |next_sibling:null
+                |body:
+                |Has 5 sub box.
+                |sub box 1:
+                    |
+                    |+++++++++++stsd begin++++++++++++++
+                    |size:69
+                    |type:'stsd'
+                    |container:stbl
+                    |next_sibling:stts
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Handler is:'ODSM'
+                    |entry_count:1
+                    |Has 1 sub box.
+                    |sub box 1:
+                        |
+                        |+++++++++++mp4s begin++++++++++++++
+                        |size:53
+                        |type:'mp4s'
+                        |container:stsd
+                        |next_sibling:null
+                        |body:
+                        |data_reference_index:1
+                        |Has 1 sub box.
+                        |sub box 1:
+                            |
+                            |+++++++++++esds(unknown) begin++++++++++++++
+                            |size:37
+                            |type:'esds'
+                            |container:mp4s
+                            |next_sibling:null
+                            |body:
+                            |total size:29
+                            |0x00 0x00 0x00 0x00 0x03 0x17 0x00 0x00 
+                            |0x00 0x04 0x0F 0x01 0x05 0x00 0x00 0x35 
+                            |0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x50 
+                            |0x05 0x00 0x06 0x01 0x02 
+                            |-----------esds end--------------
+                        |-----------mp4s end--------------
+                    |-----------stsd end--------------
+                |sub box 2:
+                    |
+                    |+++++++++++stts begin++++++++++++++
+                    |size:24
+                    |type:'stts'
+                    |container:stbl
+                    |next_sibling:stsc
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Has 1 samples.
+                    |Sample 0:(count:1, delta:600)
+                    |-----------stts end--------------
+                |sub box 3:
+                    |
+                    |+++++++++++stsc begin++++++++++++++
+                    |size:28
+                    |type:'stsc'
+                    |container:stbl
+                    |next_sibling:stsz
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Has 1 chunks.
+                    |Chunk 1:(first_chunk:1, samples_per_chunk:1, sample_description_index:1)
+                    |-----------stsc end--------------
+                |sub box 4:
+                    |
+                    |+++++++++++stsz begin++++++++++++++
+                    |size:20
+                    |type:'stsz'
+                    |container:stbl
+                    |next_sibling:stco
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |sample_size:10
+                    |-----------stsz end--------------
+                |sub box 5:
+                    |
+                    |+++++++++++stco begin++++++++++++++
+                    |size:20
+                    |type:'stco'
+                    |container:stbl
+                    |next_sibling:null
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |entry_count:1
+                    |chunk_offset[0]:52320
+                    |-----------stco end--------------
+                |-----------stbl end--------------
+            |-----------minf end--------------
+        |-----------mdia end--------------
+    |-----------trak end--------------
+|sub box 6:
+    |
+    |+++++++++++trak begin++++++++++++++
+    |size:442
+    |type:'trak'
+    |container:moov
+    |next_sibling:null
+    |body:
+    |Has 2 sub box.
+    |sub box 1:
+        |
+        |+++++++++++tkhd begin++++++++++++++
+        |size:92
+        |type:'tkhd'
+        |container:trak
+        |next_sibling:mdia
+        |body:
+        |version:0
+        |flags:0x1
+        |creation_time:0xCD5CCD38
+        |modification_time:0xCD5CCD3A
+        |track_ID:4
+        |duration:600
+        |layer:0
+        |alternate_group:0
+        |volume:0x0000
+        |matrix:
+        |0x00010000    0x00000000    0x00000000
+        |0x00000000    0x00010000    0x00000000
+        |0x00000000    0x00000000    0x40000000
+        |width:0x0
+        |height:0x0
+        |-----------tkhd end--------------
+    |sub box 2:
+        |
+        |+++++++++++mdia begin++++++++++++++
+        |size:342
+        |type:'mdia'
+        |container:trak
+        |next_sibling:null
+        |body:
+        |Has 3 sub box.
+        |sub box 1:
+            |
+            |+++++++++++mdhd begin++++++++++++++
+            |size:32
+            |type:'mdhd'
+            |container:mdia
+            |next_sibling:hdlr
+            |body:
+            |version:0
+            |flags:0x0
+            |creation_time:3445411128
+            |modification_time:3445411130
+            |timescale:600
+            |duration:600
+            |language:'und'
+            |-----------mdhd end--------------
+        |sub box 2:
+            |
+            |+++++++++++hdlr begin++++++++++++++
+            |size:70
+            |type:'hdlr'
+            |container:mdia
+            |next_sibling:minf
+            |body:
+            |version:0
+            |flags:0x0
+            |handler_type:'SDSM', 0x7364736D
+            |name:'GPAC MPEG-4 Scene Description Handler'
+            |-----------hdlr end--------------
+        |sub box 3:
+            |
+            |+++++++++++minf begin++++++++++++++
+            |size:232
+            |type:'minf'
+            |container:mdia
+            |next_sibling:null
+            |body:
+            |Has 3 sub box.
+            |sub box 1:
+                |
+                |+++++++++++nmhd begin++++++++++++++
+                |size:12
+                |type:'nmhd'
+                |container:minf
+                |next_sibling:dinf
+                |body:
+                |version:0
+                |flags:0x0
+                |-----------nmhd end--------------
+            |sub box 2:
+                |
+                |+++++++++++dinf begin++++++++++++++
+                |size:36
+                |type:'dinf'
+                |container:minf
+                |next_sibling:stbl
+                |body:
+                |Has 1 sub box.
+                |sub box 1:
+                    |
+                    |+++++++++++dref begin++++++++++++++
+                    |size:28
+                    |type:'dref'
+                    |container:dinf
+                    |next_sibling:null
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |entry_count:1
+                    |Has 1 sub box.
+                    |sub box 1:
+                        |
+                        |+++++++++++url  begin++++++++++++++
+                        |size:12
+                        |type:'url '
+                        |container:dref
+                        |next_sibling:null
+                        |body:
+                        |version:0
+                        |flags:0x1
+                        |locaction:''
+                        |-----------url  end--------------
+                    |-----------dref end--------------
+                |-----------dinf end--------------
+            |sub box 3:
+                |
+                |+++++++++++stbl begin++++++++++++++
+                |size:176
+                |type:'stbl'
+                |container:minf
+                |next_sibling:null
+                |body:
+                |Has 5 sub box.
+                |sub box 1:
+                    |
+                    |+++++++++++stsd begin++++++++++++++
+                    |size:76
+                    |type:'stsd'
+                    |container:stbl
+                    |next_sibling:stts
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Handler is:'SDSM'
+                    |entry_count:1
+                    |Has 1 sub box.
+                    |sub box 1:
+                        |
+                        |+++++++++++mp4s begin++++++++++++++
+                        |size:60
+                        |type:'mp4s'
+                        |container:stsd
+                        |next_sibling:null
+                        |body:
+                        |data_reference_index:1
+                        |Has 1 sub box.
+                        |sub box 1:
+                            |
+                            |+++++++++++esds(unknown) begin++++++++++++++
+                            |size:44
+                            |type:'esds'
+                            |container:mp4s
+                            |next_sibling:null
+                            |body:
+                            |total size:36
+                            |0x00 0x00 0x00 0x00 0x03 0x1E 0x00 0x00 
+                            |0x00 0x04 0x16 0x02 0x0D 0x00 0x00 0x08 
+                            |0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x40 
+                            |0x05 0x07 0x00 0x00 0x70 0x00 0x00 0x00 
+                            |0x00 0x06 0x01 0x02 
+                            |-----------esds end--------------
+                        |-----------mp4s end--------------
+                    |-----------stsd end--------------
+                |sub box 2:
+                    |
+                    |+++++++++++stts begin++++++++++++++
+                    |size:24
+                    |type:'stts'
+                    |container:stbl
+                    |next_sibling:stsc
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Has 1 samples.
+                    |Sample 0:(count:1, delta:600)
+                    |-----------stts end--------------
+                |sub box 3:
+                    |
+                    |+++++++++++stsc begin++++++++++++++
+                    |size:28
+                    |type:'stsc'
+                    |container:stbl
+                    |next_sibling:stsz
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |Has 1 chunks.
+                    |Chunk 1:(first_chunk:1, samples_per_chunk:1, sample_description_index:1)
+                    |-----------stsc end--------------
+                |sub box 4:
+                    |
+                    |+++++++++++stsz begin++++++++++++++
+                    |size:20
+                    |type:'stsz'
+                    |container:stbl
+                    |next_sibling:stco
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |sample_size:8
+                    |-----------stsz end--------------
+                |sub box 5:
+                    |
+                    |+++++++++++stco begin++++++++++++++
+                    |size:20
+                    |type:'stco'
+                    |container:stbl
+                    |next_sibling:null
+                    |body:
+                    |version:0
+                    |flags:0x0
+                    |entry_count:1
+                    |chunk_offset[0]:52330
+                    |-----------stco end--------------
+                |-----------stbl end--------------
+            |-----------minf end--------------
+        |-----------mdia end--------------
+    |-----------trak end--------------
+|-----------moov end--------------
+|
+|+++++++++++mdat begin++++++++++++++
+|size:1466413
+|type:'mdat'
+|file position:7798
+|container:file
+|next_sibling:free
+|body:
+|total size:1466405
+|0x00 0x00 0x00 0x09 0x06 0x00 0x05 0x93 
+|0xC6 0x80 0x8C 0xA4 0x80 0x00 0x00 0x02 
+|0xCA 0x06 0x05 0xFF 0xFF 0xC6 0xDC 0x45 
+|0xE9 0xBD 0xE6 0xD9 0x48 0xB7 0x96 0x2C 
+|0xD8 0x20 0xD9 0x23 0xEE 0xEF 0x78 0x32 
+|0x36 0x34 0x20 0x2D 0x20 0x63 0x6F 0x72 
+|0x65 0x20 0x31 0x30 0x37 0x20 0x72 0x31 
+|0x37 0x34 0x35 0x20 0x34 0x37 0x38 0x35 
+|....  ....  ....  ....
+|-----------mdat end--------------
+|
+|+++++++++++free begin++++++++++++++
+|size:59
+|type:'free'
+|file position:1474211
+|container:file
+|next_sibling:null
+|body:
+|total size:51
+|0x49 0x73 0x6F 0x4D 0x65 0x64 0x69 0x61 
+|0x20 0x46 0x69 0x6C 0x65 0x20 0x50 0x72 
+|0x6F 0x64 0x75 0x63 0x65 0x64 0x20 0x77 
+|0x69 0x74 0x68 0x20 0x47 0x50 0x41 0x43 
+|0x20 0x30 0x2E 0x35 0x2E 0x31 0x2D 0x44 
+|0x45 0x56 0x2D 0x72 0x65 0x76 0x34 0x32 
+|0x39 0x35 0x00 
+|-----------free end--------------
+
+
+Mdat body size:1466405
+0x00 0x00 0x00 0x09 0x06 0x00 0x05 0x93 
+0xC6 0x80 0x8C 0xA4 0x80 0x00 0x00 0x02 
+0xCA 0x06 0x05 0xFF 0xFF 0xC6 0xDC 0x45 
+0xE9 0xBD 0xE6 0xD9 0x48 0xB7 0x96 0x2C 
+0xD8 0x20 0xD9 0x23 0xEE 0xEF 0x78 0x32 
+0x36 0x34 0x20 0x2D 0x20 0x63 0x6F 0x72 
+0x65 0x20 0x31 0x30 0x37 0x20 0x72 0x31 
+0x37 0x34 0x35 0x20 0x34 0x37 0x38 0x35 
+0x65 0x38 0x65 0x20 0x2D 0x20 0x48 0x2E 
+0x32 0x36 0x34 0x2F 0x4D 0x50 0x45 0x47 
+0x2D 0x34 0x20 0x41 0x56 0x43 0x20 0x63 
+0x6F 0x64 0x65 0x63 0x20 0x2D 0x20 0x43 
+0x6F 0x70 0x79 0x6C 0x65 0x66 0x74 0x20 
+0x32 0x30 0x30 0x33 0x2D 0x32 0x30 0x31 
+0x30 0x20 0x2D 0x20 0x68 0x74 0x74 0x70 
+0x3A 0x2F 0x2F 0x77 0x77 0x77 0x2E 0x76 
