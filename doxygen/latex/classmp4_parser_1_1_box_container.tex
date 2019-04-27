@@ -1,0 +1,44 @@
+\hypertarget{classmp4_parser_1_1_box_container}{}\section{mp4\+Parser\+::Box\+Container Class Reference}
+\label{classmp4_parser_1_1_box_container}\index{mp4Parser::BoxContainer@{mp4Parser::BoxContainer}}
+Inheritance diagram for mp4\+Parser\+::Box\+Container\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.075692cm]{classmp4_parser_1_1_box_container}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_container_aef0208e67feaee70a7882db0af35e37c}\label{classmp4_parser_1_1_box_container_aef0208e67feaee70a7882db0af35e37c}} 
+{\bfseries Box\+Container} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_box_container_a84274dc2397087178ea6858971d399ee}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_box_container_a84274dc2397087178ea6858971d399ee}\label{classmp4_parser_1_1_box_container_a84274dc2397087178ea6858971d399ee}} 
+\index{mp4Parser::BoxContainer@{mp4Parser::BoxContainer}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::BoxContainer@{mp4Parser::BoxContainer}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Box\+Container\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented from \mbox{\hyperlink{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}{mp4\+Parser\+::\+Box}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classmp4_parser_1_1_audio_sample_entry_box_ab65dfb4aee59ecd374567ceafe58de4f}{mp4\+Parser\+::\+Audio\+Sample\+Entry\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_visual_sample_entry_box_a336c8d02232f769e50dcbd4c031bf274}{mp4\+Parser\+::\+Visual\+Sample\+Entry\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_hint_sample_entry_box_aa9a7e41f4bd9773fe31b867743d93d8f}{mp4\+Parser\+::\+Hint\+Sample\+Entry\+Box}}, and \mbox{\hyperlink{classmp4_parser_1_1_sample_entry_box_a8ff77bc115eb18deee12619ebfc0eaa6}{mp4\+Parser\+::\+Sample\+Entry\+Box}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/box.\+cpp\end{DoxyCompactItemize}

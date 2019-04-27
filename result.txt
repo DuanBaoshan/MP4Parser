@@ -1,4 +1,4 @@
-File:'..\..\mp4\15sec_169_only.mp4'
+File:'d:\mp4\15sec_169_only.mp4'
 *******************************
 There are 4 tracks.
 Track ID:1

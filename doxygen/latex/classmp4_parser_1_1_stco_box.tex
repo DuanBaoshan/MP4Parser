@@ -1,0 +1,52 @@
+\hypertarget{classmp4_parser_1_1_stco_box}{}\section{mp4\+Parser\+::Stco\+Box Class Reference}
+\label{classmp4_parser_1_1_stco_box}\index{mp4Parser::StcoBox@{mp4Parser::StcoBox}}
+Inheritance diagram for mp4\+Parser\+::Stco\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmp4_parser_1_1_stco_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_stco_box_a773d7a90643806a8c5e55cd1171b21ef}\label{classmp4_parser_1_1_stco_box_a773d7a90643806a8c5e55cd1171b21ef}} 
+{\bfseries Stco\+Box} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_stco_box_a94fe370219871eb204611637fa482449}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_stco_box_acb45724a6fd0ce04a7d1379e0cc8309e}\label{classmp4_parser_1_1_stco_box_acb45724a6fd0ce04a7d1379e0cc8309e}} 
+uint32\+\_\+t {\bfseries entry\+Count} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_stco_box_a72487183946bce734d67aac01707f893}\label{classmp4_parser_1_1_stco_box_a72487183946bce734d67aac01707f893}} 
+const std\+::vector$<$ uint32\+\_\+t $>$ \& {\bfseries chunk\+Offset} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_stco_box_a5d3d3436f6f6b827e6ed389ba08ab55d}\label{classmp4_parser_1_1_stco_box_a5d3d3436f6f6b827e6ed389ba08ab55d}} 
+virtual int {\bfseries show\+Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_stco_box_a94fe370219871eb204611637fa482449}\label{classmp4_parser_1_1_stco_box_a94fe370219871eb204611637fa482449}} 
+\index{mp4Parser::StcoBox@{mp4Parser::StcoBox}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::StcoBox@{mp4Parser::StcoBox}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Stco\+Box\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented from \mbox{\hyperlink{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}{mp4\+Parser\+::\+Box}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/stcobox.\+cpp\end{DoxyCompactItemize}

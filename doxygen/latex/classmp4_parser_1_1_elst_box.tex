@@ -1,0 +1,57 @@
+\hypertarget{classmp4_parser_1_1_elst_box}{}\section{mp4\+Parser\+::Elst\+Box Class Reference}
+\label{classmp4_parser_1_1_elst_box}\index{mp4Parser::ElstBox@{mp4Parser::ElstBox}}
+Inheritance diagram for mp4\+Parser\+::Elst\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmp4_parser_1_1_elst_box}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmp4_parser_1_1_elst_box_1_1_edit_segment__t}{Edit\+Segment\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_elst_box_ab5f2dbbff7fceca938c5bcfa3530f3cd}\label{classmp4_parser_1_1_elst_box_ab5f2dbbff7fceca938c5bcfa3530f3cd}} 
+{\bfseries Elst\+Box} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_elst_box_a86d32e797d78cf7c00b81e2e34751324}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_elst_box_accaf636deb7cdce5a362593f5fd3f312}\label{classmp4_parser_1_1_elst_box_accaf636deb7cdce5a362593f5fd3f312}} 
+uint32\+\_\+t {\bfseries entry\+Count} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_elst_box_aceeea8579bbd94f0369966ba2ab35787}\label{classmp4_parser_1_1_elst_box_aceeea8579bbd94f0369966ba2ab35787}} 
+const std\+::vector$<$ \mbox{\hyperlink{structmp4_parser_1_1_elst_box_1_1_edit_segment__t}{Edit\+Segment\+\_\+t}} $>$ \& {\bfseries edit\+Segment\+List} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_elst_box_a3590a12da8f926827545dd6377e95629}\label{classmp4_parser_1_1_elst_box_a3590a12da8f926827545dd6377e95629}} 
+virtual int {\bfseries show\+Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_elst_box_a86d32e797d78cf7c00b81e2e34751324}\label{classmp4_parser_1_1_elst_box_a86d32e797d78cf7c00b81e2e34751324}} 
+\index{mp4Parser::ElstBox@{mp4Parser::ElstBox}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::ElstBox@{mp4Parser::ElstBox}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Elst\+Box\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented from \mbox{\hyperlink{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}{mp4\+Parser\+::\+Box}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/elstbox.\+cpp\end{DoxyCompactItemize}

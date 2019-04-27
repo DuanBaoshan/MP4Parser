@@ -1,0 +1,151 @@
+\hypertarget{classmp4_parser_1_1_m_p4_parser}{}\section{mp4\+Parser\+::M\+P4\+Parser Class Reference}
+\label{classmp4_parser_1_1_m_p4_parser}\index{mp4Parser::MP4Parser@{mp4Parser::MP4Parser}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_ab91eea9d61232b6db52eda81c65e8ad4}{parse}} (const std\+::string \&src\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Parse a mp4 file and construct a box list containing all the mp4 boxes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_aded5fb465d00d6a7cdde6fa276615c49}{output\+Box\+List}} ()
+\begin{DoxyCompactList}\small\item\em Output all the box information to a file or stdout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a8ab5c7cd064c87f91b56d5f9cc3df6ae}\label{classmp4_parser_1_1_m_p4_parser_a8ab5c7cd064c87f91b56d5f9cc3df6ae}} 
+int \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a8ab5c7cd064c87f91b56d5f9cc3df6ae}{get\+Box\+Count}} (const char $\ast$p\+\_\+box\+Type) const
+\begin{DoxyCompactList}\small\item\em Search in the box list to find the total count of boxes with the same p\+\_\+box\+Type. \end{DoxyCompactList}\item 
+Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a01d96e45863265af62744aa0176ba13f}{get\+Box}} (const char $\ast$p\+\_\+box\+Type) const
+\begin{DoxyCompactList}\small\item\em Find the box which type is equal to p\+\_\+box\+Type from the box list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a3ca2c14303ef53c0e3a2abe72d22c017}\label{classmp4_parser_1_1_m_p4_parser_a3ca2c14303ef53c0e3a2abe72d22c017}} 
+Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a3ca2c14303ef53c0e3a2abe72d22c017}{get\+Next\+Box}} (const Box\+Ptr\+\_\+t \&cur\+Box) const
+\begin{DoxyCompactList}\small\item\em Get the next box from box list which has the same type as cur\+Box. \end{DoxyCompactList}\item 
+Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a06442051ce3c360ab2842d5a2872989b}{get\+First\+Box}} () const
+\begin{DoxyCompactList}\small\item\em Get the first box from box list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a8c9f66c274d356b51afe9b62df9b7cf3}\label{classmp4_parser_1_1_m_p4_parser_a8c9f66c274d356b51afe9b62df9b7cf3}} 
+bool {\bfseries exists} (const char $\ast$p\+\_\+box\+Type) const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_af0e4d62b198de686c320271d327b02c7}\label{classmp4_parser_1_1_m_p4_parser_af0e4d62b198de686c320271d327b02c7}} 
+int {\bfseries transfer} (Transfer\+Func\+\_\+t transfer\+Func, void $\ast$p\+\_\+user\+Data)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_af1f298af86932b58b3677722b49736c0}\label{classmp4_parser_1_1_m_p4_parser_af1f298af86932b58b3677722b49736c0}} 
+int \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_af1f298af86932b58b3677722b49736c0}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the source file name, the parsed result(all the box information). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_ad62a065a468987b648eedaba718f8a0d}\label{classmp4_parser_1_1_m_p4_parser_ad62a065a468987b648eedaba718f8a0d}} 
+std\+::string {\bfseries src\+File} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a637db83f72f76903625b82ea8d3a3560}\label{classmp4_parser_1_1_m_p4_parser_a637db83f72f76903625b82ea8d3a3560}} 
+std\+::string {\bfseries dst\+File} ()
+\item 
+int \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_ac5ac99898f7161ebcf828c6f8be2f32a}{set\+Dst\+File}} (const std\+::string \&output\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Set the output file path. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a29f0fc9e2e0c7ed4751e44b8f28092c3}{redirect\+Out2\+File}} ()
+\begin{DoxyCompactList}\small\item\em Redirect the output of cout to a file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a7270d8138d1e9c6db3ed4838e5f34ee6}{restore2\+Stdout}} ()
+\begin{DoxyCompactList}\small\item\em Restore cout to stdout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a01d96e45863265af62744aa0176ba13f}\label{classmp4_parser_1_1_m_p4_parser_a01d96e45863265af62744aa0176ba13f}} 
+\index{mp4Parser::MP4Parser@{mp4Parser::MP4Parser}!getBox@{getBox}}
+\index{getBox@{getBox}!mp4Parser::MP4Parser@{mp4Parser::MP4Parser}}
+\subsubsection{\texorpdfstring{getBox()}{getBox()}}
+{\footnotesize\ttfamily Box\+Ptr\+\_\+t mp4\+Parser\+::\+M\+P4\+Parser\+::get\+Box (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p\+\_\+box\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Find the box which type is equal to p\+\_\+box\+Type from the box list. 
+
+It will only return the first found box even though there are more than one box.\+If there are more than one box with p\+\_\+box\+Type, and you need get all the boxes, you can call get\+Next\+Box again and again, until the returned box is null. \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a06442051ce3c360ab2842d5a2872989b}\label{classmp4_parser_1_1_m_p4_parser_a06442051ce3c360ab2842d5a2872989b}} 
+\index{mp4Parser::MP4Parser@{mp4Parser::MP4Parser}!getFirstBox@{getFirstBox}}
+\index{getFirstBox@{getFirstBox}!mp4Parser::MP4Parser@{mp4Parser::MP4Parser}}
+\subsubsection{\texorpdfstring{getFirstBox()}{getFirstBox()}}
+{\footnotesize\ttfamily Box\+Ptr\+\_\+t mp4\+Parser\+::\+M\+P4\+Parser\+::get\+First\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the first box from box list. 
+
+You can transfer the whole box list like the following code\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} TransferBox(\textcolor{keyword}{const} BoxPtr\_t \&box)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    \textcolor{comment}{//do something;}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (!box->hasChildren())}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return};}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    BoxPtr\_t child = box->firstChild();}
+\DoxyCodeLine{    \textcolor{keywordflow}{while} (child)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        TransferBox(child);}
+\DoxyCodeLine{        child = child->nextSibling();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{BoxPtr\_t box = \mbox{\hyperlink{namespacemp4_parser}{mp4Parser}}.getFirstBox();}
+\DoxyCodeLine{\textcolor{keywordflow}{while}(box)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    TransferBox(box);}
+\DoxyCodeLine{    box = box->nextSibling();}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_aded5fb465d00d6a7cdde6fa276615c49}\label{classmp4_parser_1_1_m_p4_parser_aded5fb465d00d6a7cdde6fa276615c49}} 
+\index{mp4Parser::MP4Parser@{mp4Parser::MP4Parser}!outputBoxList@{outputBoxList}}
+\index{outputBoxList@{outputBoxList}!mp4Parser::MP4Parser@{mp4Parser::MP4Parser}}
+\subsubsection{\texorpdfstring{outputBoxList()}{outputBoxList()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+M\+P4\+Parser\+::output\+Box\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Output all the box information to a file or stdout. 
+
+If never set output file by set\+Dst\+File(output\+File\+Path) or has cleared output file by set\+Dst\+File(\char`\"{}\char`\"{}), it will output all the box information to stdout, or else it will output to a file. \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_ab91eea9d61232b6db52eda81c65e8ad4}\label{classmp4_parser_1_1_m_p4_parser_ab91eea9d61232b6db52eda81c65e8ad4}} 
+\index{mp4Parser::MP4Parser@{mp4Parser::MP4Parser}!parse@{parse}}
+\index{parse@{parse}!mp4Parser::MP4Parser@{mp4Parser::MP4Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+M\+P4\+Parser\+::parse (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{src\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Parse a mp4 file and construct a box list containing all the mp4 boxes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src\+File\+Name} & mp4 file name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a29f0fc9e2e0c7ed4751e44b8f28092c3}\label{classmp4_parser_1_1_m_p4_parser_a29f0fc9e2e0c7ed4751e44b8f28092c3}} 
+\index{mp4Parser::MP4Parser@{mp4Parser::MP4Parser}!redirectOut2File@{redirectOut2File}}
+\index{redirectOut2File@{redirectOut2File}!mp4Parser::MP4Parser@{mp4Parser::MP4Parser}}
+\subsubsection{\texorpdfstring{redirectOut2File()}{redirectOut2File()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+M\+P4\+Parser\+::redirect\+Out2\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Redirect the output of cout to a file. 
+
+When cout some information, the default output is stdout. But you can cout to a file with this function. The output file must be setted by set\+Dst\+File(output\+File\+Path) before you call this function.\+If you haven\textquotesingle{}t setted the output file, or set output file by set\+Dst\+File(\char`\"{}\char`\"{}), this function will do nothing. \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a7270d8138d1e9c6db3ed4838e5f34ee6}\label{classmp4_parser_1_1_m_p4_parser_a7270d8138d1e9c6db3ed4838e5f34ee6}} 
+\index{mp4Parser::MP4Parser@{mp4Parser::MP4Parser}!restore2Stdout@{restore2Stdout}}
+\index{restore2Stdout@{restore2Stdout}!mp4Parser::MP4Parser@{mp4Parser::MP4Parser}}
+\subsubsection{\texorpdfstring{restore2Stdout()}{restore2Stdout()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+M\+P4\+Parser\+::restore2\+Stdout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Restore cout to stdout. 
+
+If you have called redirect\+Out2\+File, and at the end of cout, you must call restore2\+Stdout to restore cout to stdout.\+How many times you call redirect\+Out2\+File, how many times you must call restore2\+Stdout. \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_ac5ac99898f7161ebcf828c6f8be2f32a}\label{classmp4_parser_1_1_m_p4_parser_ac5ac99898f7161ebcf828c6f8be2f32a}} 
+\index{mp4Parser::MP4Parser@{mp4Parser::MP4Parser}!setDstFile@{setDstFile}}
+\index{setDstFile@{setDstFile}!mp4Parser::MP4Parser@{mp4Parser::MP4Parser}}
+\subsubsection{\texorpdfstring{setDstFile()}{setDstFile()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+M\+P4\+Parser\+::set\+Dst\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{output\+File\+Path }\end{DoxyParamCaption})}
+
+
+
+Set the output file path. 
+
+When set a valid output file path by this function, \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_aded5fb465d00d6a7cdde6fa276615c49}{output\+Box\+List()}} will output to that file, and \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a29f0fc9e2e0c7ed4751e44b8f28092c3}{redirect\+Out2\+File()}} also will redirect cout to that file. When clear the output file by dst\+File(\char`\"{}\char`\"{}), the \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_aded5fb465d00d6a7cdde6fa276615c49}{output\+Box\+List()}} and \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a29f0fc9e2e0c7ed4751e44b8f28092c3}{redirect\+Out2\+File()}} will output to stdout again. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4parser.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/mp4parser.\+cpp\end{DoxyCompactItemize}

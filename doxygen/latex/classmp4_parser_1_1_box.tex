@@ -1,0 +1,217 @@
+\hypertarget{classmp4_parser_1_1_box}{}\section{mp4\+Parser\+::Box Class Reference}
+\label{classmp4_parser_1_1_box}\index{mp4Parser::Box@{mp4Parser::Box}}
+Inheritance diagram for mp4\+Parser\+::Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classmp4_parser_1_1_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_aca38a71ac4e90b8f1f2a5bb28385a260}\label{classmp4_parser_1_1_box_aca38a71ac4e90b8f1f2a5bb28385a260}} 
+{\bfseries Box} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type, bool unknown=false)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_ad7a87d6c82ee5f030f25349fb9fa37ed}\label{classmp4_parser_1_1_box_ad7a87d6c82ee5f030f25349fb9fa37ed}} 
+uint32\+\_\+t {\bfseries size} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a200b3c6ed0b7b9189525a72fbc5e135e}\label{classmp4_parser_1_1_box_a200b3c6ed0b7b9189525a72fbc5e135e}} 
+const char $\ast$ {\bfseries type} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_afc7d9acf722110a61d9f29b6f225e0a5}\label{classmp4_parser_1_1_box_afc7d9acf722110a61d9f29b6f225e0a5}} 
+uint64\+\_\+t {\bfseries large\+Size} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a1dccbe03be56de250bc8e1900955fe98}\label{classmp4_parser_1_1_box_a1dccbe03be56de250bc8e1900955fe98}} 
+const User\+Type\+\_\+t \& {\bfseries user\+Type} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a03f39933e4717612b85cbeaecadb28c4}\label{classmp4_parser_1_1_box_a03f39933e4717612b85cbeaecadb28c4}} 
+uint8\+\_\+t {\bfseries version} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_aa9999a2befee633b6be78413469cc37f}\label{classmp4_parser_1_1_box_aa9999a2befee633b6be78413469cc37f}} 
+uint32\+\_\+t {\bfseries flags} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a99eb8aaa341a4aaf1a9deb88ca774e89}\label{classmp4_parser_1_1_box_a99eb8aaa341a4aaf1a9deb88ca774e89}} 
+Box\+Ptr\+\_\+t {\bfseries container} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_aa97e19e5b07b10051b64f697466b737c}\label{classmp4_parser_1_1_box_aa97e19e5b07b10051b64f697466b737c}} 
+Box\+Ptr\+\_\+t {\bfseries first\+Child} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a08f2cf9ef4039f58be852eae41c9856d}\label{classmp4_parser_1_1_box_a08f2cf9ef4039f58be852eae41c9856d}} 
+Box\+Ptr\+\_\+t {\bfseries next\+Sibling} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a0fdfc1bfb891edb4a285c97cfe0b85c9}\label{classmp4_parser_1_1_box_a0fdfc1bfb891edb4a285c97cfe0b85c9}} 
+bool {\bfseries is\+Unknown\+Box} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a1ef4e4c2dbacf1bb8e6c1f5a97f762e4}\label{classmp4_parser_1_1_box_a1ef4e4c2dbacf1bb8e6c1f5a97f762e4}} 
+bool {\bfseries has\+Children} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a2a60245c22cd810820fc43f38bf0821d}\label{classmp4_parser_1_1_box_a2a60245c22cd810820fc43f38bf0821d}} 
+int \mbox{\hyperlink{classmp4_parser_1_1_box_a2a60245c22cd810820fc43f38bf0821d}{get\+Box\+Count\+In\+Children}} (const char $\ast$p\+\_\+box\+Type)
+\begin{DoxyCompactList}\small\item\em Search in the box\textquotesingle{}s children to find the total count of boxes with the same p\+\_\+box\+Type. \end{DoxyCompactList}\item 
+Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_box_a1dc6d8d489a5099e167cdd7a1a592ea2}{find\+Box\+In\+Children}} (const char $\ast$p\+\_\+box\+Type)
+\begin{DoxyCompactList}\small\item\em Search in the box\textquotesingle{}s children which type is equal to parameter p\+\_\+box\+Type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a96bab9fc4a86d5b544bcb9c37725f2fa}\label{classmp4_parser_1_1_box_a96bab9fc4a86d5b544bcb9c37725f2fa}} 
+Box\+Ptr\+\_\+t {\bfseries find\+Next\+Box\+In\+Children} (const Box\+Ptr\+\_\+t \&cur\+Box)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a1495392fdac2bb838ac0c03de82ea46a}\label{classmp4_parser_1_1_box_a1495392fdac2bb838ac0c03de82ea46a}} 
+int {\bfseries level} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a9d5310a15e0682f0021166c3a2575a48}\label{classmp4_parser_1_1_box_a9d5310a15e0682f0021166c3a2575a48}} 
+void {\bfseries set\+Level} (int level)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a8fa16565b584301d391c849d237b3010}\label{classmp4_parser_1_1_box_a8fa16565b584301d391c849d237b3010}} 
+int {\bfseries set\+File\+Pos} (off64\+\_\+t pos)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_ad922fd273809026c46ed0159647a64bd}\label{classmp4_parser_1_1_box_ad922fd273809026c46ed0159647a64bd}} 
+off64\+\_\+t {\bfseries file\+Pos} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a29a95b1fc05aa5dedef0937c2796c0e2}\label{classmp4_parser_1_1_box_a29a95b1fc05aa5dedef0937c2796c0e2}} 
+int {\bfseries set\+Actual\+Body\+Size} (uint32\+\_\+t actual\+Body\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a904c94abd71624fa9844b9a7001f7505}\label{classmp4_parser_1_1_box_a904c94abd71624fa9844b9a7001f7505}} 
+static int {\bfseries set\+Src\+File\+Path} (const std\+::string \&src\+File\+Path)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a4695522b0b48e837ec8957f1c81a84fb}\label{classmp4_parser_1_1_box_a4695522b0b48e837ec8957f1c81a84fb}} 
+int {\bfseries show} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_ae3ac92a6215c86664be6e0a76c608bd0}\label{classmp4_parser_1_1_box_ae3ac92a6215c86664be6e0a76c608bd0}} 
+virtual int {\bfseries show\+Body} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a92cb4db9a720eaedd20727eb9deb1bbf}\label{classmp4_parser_1_1_box_a92cb4db9a720eaedd20727eb9deb1bbf}} 
+int {\bfseries check\+Body\+Valid} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_aab27a49bf72791f10af83a2bde806765}\label{classmp4_parser_1_1_box_aab27a49bf72791f10af83a2bde806765}} 
+int {\bfseries parse\+Body\+And\+Append\+Child} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_ad14c58ccda8ea5205cfb51bb0981b3bc}\label{classmp4_parser_1_1_box_ad14c58ccda8ea5205cfb51bb0981b3bc}} 
+int {\bfseries append\+Child} (Box\+Ptr\+\_\+t \&box)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a4e171a230d24f76d9c074516cee0386f}\label{classmp4_parser_1_1_box_a4e171a230d24f76d9c074516cee0386f}} 
+int {\bfseries parse\+Ver\+And\+Flags} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a57c0c875aec8562872696b6c66f67021}\label{classmp4_parser_1_1_box_a57c0c875aec8562872696b6c66f67021}} 
+void {\bfseries insert\+Output\+Space} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a3ba346fb025f0b57b7ea0e4d7a6ea617}\label{classmp4_parser_1_1_box_a3ba346fb025f0b57b7ea0e4d7a6ea617}} 
+void {\bfseries show\+Matrix} (Box\+Matrix\+\_\+t \&matrix)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_aac566f926f43ea4b13c04b04abb4b14d}\label{classmp4_parser_1_1_box_aac566f926f43ea4b13c04b04abb4b14d}} 
+void {\bfseries show\+Ver\+Flags} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_ab1de06961c5314b8fdfadfc3a0548a82}\label{classmp4_parser_1_1_box_ab1de06961c5314b8fdfadfc3a0548a82}} 
+void {\bfseries print\+Raw\+Buff} (uint8\+\_\+t $\ast$p\+\_\+buffer, uint32\+\_\+t buff\+Size, uint32\+\_\+t actual\+Size)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_aad3a0e2e04c44bfa3dd66fb4ce646cfe}\label{classmp4_parser_1_1_box_aad3a0e2e04c44bfa3dd66fb4ce646cfe}} 
+uint32\+\_\+t {\bfseries m\+\_\+size}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a89014ae6e8ecfe9f72c54a8c0e96cfad}\label{classmp4_parser_1_1_box_a89014ae6e8ecfe9f72c54a8c0e96cfad}} 
+Box\+Type\+\_\+t {\bfseries m\+\_\+type}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a9e4749724030f02c75ede8288a925437}\label{classmp4_parser_1_1_box_a9e4749724030f02c75ede8288a925437}} 
+uint64\+\_\+t {\bfseries m\+\_\+large\+Size}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a63d66544d009cdaf37191e79bd2d50cc}\label{classmp4_parser_1_1_box_a63d66544d009cdaf37191e79bd2d50cc}} 
+User\+Type\+\_\+t {\bfseries m\+\_\+user\+Type}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a95d77f7de52977144f4e66606418640f}\label{classmp4_parser_1_1_box_a95d77f7de52977144f4e66606418640f}} 
+uint8\+\_\+t {\bfseries m\+\_\+version}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a1716979614f71ce04765effc02004080}\label{classmp4_parser_1_1_box_a1716979614f71ce04765effc02004080}} 
+uint32\+\_\+t {\bfseries m\+\_\+flags}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a34de463278b8fb514a4c2428922f8e2d}\label{classmp4_parser_1_1_box_a34de463278b8fb514a4c2428922f8e2d}} 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classmp4_parser_1_1_box}{Box}} $>$ {\bfseries m\+\_\+container}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a1b4a9a7e3368c7856f28c5b8641c5ae2}\label{classmp4_parser_1_1_box_a1b4a9a7e3368c7856f28c5b8641c5ae2}} 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classmp4_parser_1_1_box}{Box}} $>$ {\bfseries m\+\_\+next\+Sibling}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a653a235e702f85367422a193946a4d9e}\label{classmp4_parser_1_1_box_a653a235e702f85367422a193946a4d9e}} 
+Box\+Body\+Ptr\+\_\+t {\bfseries m\+\_\+body}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a07d0b42f7982cd452653cc359ef5ca1a}\label{classmp4_parser_1_1_box_a07d0b42f7982cd452653cc359ef5ca1a}} 
+uint32\+\_\+t {\bfseries m\+\_\+body\+Size}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a3ef69b1a4ce14466c47f0e5cee7004e9}\label{classmp4_parser_1_1_box_a3ef69b1a4ce14466c47f0e5cee7004e9}} 
+uint32\+\_\+t {\bfseries m\+\_\+actual\+Body\+Size}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_box_afc4a3304b9cd22cc77ed988ff03a9cfc}{m\+\_\+body\+Min\+Size}}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a90408f1580f539a7d25465faba8357c6}\label{classmp4_parser_1_1_box_a90408f1580f539a7d25465faba8357c6}} 
+\mbox{\hyperlink{classmp4_parser_1_1_box_list}{Box\+List}} {\bfseries m\+\_\+box\+List}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_af227e8342b3df86804c3b029eee499ab}\label{classmp4_parser_1_1_box_af227e8342b3df86804c3b029eee499ab}} 
+int {\bfseries m\+\_\+level}
+\item 
+off64\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_box_a795d4a890b967c920cb922c51606e3c3}{m\+\_\+pos}}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a094d7dbc2341a4fa1c22871a87e90bc8}\label{classmp4_parser_1_1_box_a094d7dbc2341a4fa1c22871a87e90bc8}} 
+static std\+::string {\bfseries m\+\_\+src\+File\+Path} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_ae042c94909df0337db5ae953719dabe2}\label{classmp4_parser_1_1_box_ae042c94909df0337db5ae953719dabe2}} 
+class {\bfseries Box\+List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_box_a1dc6d8d489a5099e167cdd7a1a592ea2}\label{classmp4_parser_1_1_box_a1dc6d8d489a5099e167cdd7a1a592ea2}} 
+\index{mp4Parser::Box@{mp4Parser::Box}!findBoxInChildren@{findBoxInChildren}}
+\index{findBoxInChildren@{findBoxInChildren}!mp4Parser::Box@{mp4Parser::Box}}
+\subsubsection{\texorpdfstring{findBoxInChildren()}{findBoxInChildren()}}
+{\footnotesize\ttfamily Box\+Ptr\+\_\+t mp4\+Parser\+::\+Box\+::find\+Box\+In\+Children (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p\+\_\+box\+Type }\end{DoxyParamCaption})}
+
+
+
+Search in the box\textquotesingle{}s children which type is equal to parameter p\+\_\+box\+Type. 
+
+It will only return the first found box even though there are more than one box.\+If there are more than box with p\+\_\+box\+Type, and you need get all the boxes with the same type, you can call find\+Next\+Box\+In\+Children again and again, until the returned box is null. \mbox{\Hypertarget{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}\label{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}} 
+\index{mp4Parser::Box@{mp4Parser::Box}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::Box@{mp4Parser::Box}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Box\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented in \mbox{\hyperlink{classmp4_parser_1_1_trex_box_af4b5616abea11f60d63af8f9070fafdf}{mp4\+Parser\+::\+Trex\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_tfdt_box_ae73900672f8fe353a6fee9a37b971ad4}{mp4\+Parser\+::\+Tfdt\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_sdp_box_a73c6c78702a8f6032bef5d6f1d703090}{mp4\+Parser\+::\+Sdp\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_rtp_box_a732f4387776dc70dbb26c7e9219c65ef}{mp4\+Parser\+::\+Rtp\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_payt_box_a95e5ecabf06b6fa4b3238fe2a495f9b3}{mp4\+Parser\+::\+Payt\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_dmax_box_ab786df72363e5b819e553168e3922ab1}{mp4\+Parser\+::\+Dmax\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_pmax_box_a0a5929ce9d30eb5a3c840c8321f133cd}{mp4\+Parser\+::\+Pmax\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_tmax_box_ad9fa76bdaab68fa81892d310c8533bad}{mp4\+Parser\+::\+Tmax\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_tmin_box_aa6acc0171e81391f83a7ef00e89d617d}{mp4\+Parser\+::\+Tmin\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_drep_box_a5285192d3fbb13b91493942f05c04ca8}{mp4\+Parser\+::\+Drep\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_dimm_box_a9504de9dd02507dc834e7481a0e4cff1}{mp4\+Parser\+::\+Dimm\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_dmed_box_a34c87ade60a56d01a0b809aa067e955c}{mp4\+Parser\+::\+Dmed\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_maxr_box_a3a949e14defbdc89190b1dfc0509f3ad}{mp4\+Parser\+::\+Maxr\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_tpay_box_a3a1d0623a4d4a5fec2fa1843c4e2d329}{mp4\+Parser\+::\+Tpay\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_npck_box_abd131fd0a9473b8f7b79500a588cc8a4}{mp4\+Parser\+::\+Npck\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_totl_box_a352271d47a04f7884e81978ce4e8d697}{mp4\+Parser\+::\+Totl\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_tpyl_box_a957b9654a98d8bbaf39a41efc273d642}{mp4\+Parser\+::\+Tpyl\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_nump_box_abbbb17a66d56147ad973631118f0a0ed}{mp4\+Parser\+::\+Nump\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_trpy_box_a15efae09d81df73b14bb59039452785d}{mp4\+Parser\+::\+Trpy\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_name_box_ae7f3b3a458b89f874f2f6584fd7e0123}{mp4\+Parser\+::\+Name\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_trun_box_ac17bd64107ffbada335874e12d8a8a25}{mp4\+Parser\+::\+Trun\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_tfhd_box_a9cbc2c42c59b678d13193fdb46a07314}{mp4\+Parser\+::\+Tfhd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_mfhd_box_a90ebfbbacfd2a91c158e6b10edc6ed43}{mp4\+Parser\+::\+Mfhd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_mehd_box_aa63f552035700d1159607d7285e494b1}{mp4\+Parser\+::\+Mehd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_stss_box_a1d6de5d79b6d67ffc2ae30dd6c1f9b67}{mp4\+Parser\+::\+Stss\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_stco_box_a94fe370219871eb204611637fa482449}{mp4\+Parser\+::\+Stco\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_stsz_box_a65c4c42316cdc488b44cd3c15412e84a}{mp4\+Parser\+::\+Stsz\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_stsc_box_a0f63518f8cef06e41b43b2d527a986ca}{mp4\+Parser\+::\+Stsc\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_ctts_box_a5fe22fc963e1a4bf8268d314367fc691}{mp4\+Parser\+::\+Ctts\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_stts_box_a227b3d37201475d3c3deef99fda2323a}{mp4\+Parser\+::\+Stts\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_audio_sample_entry_box_ab65dfb4aee59ecd374567ceafe58de4f}{mp4\+Parser\+::\+Audio\+Sample\+Entry\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_visual_sample_entry_box_a336c8d02232f769e50dcbd4c031bf274}{mp4\+Parser\+::\+Visual\+Sample\+Entry\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_hint_sample_entry_box_aa9a7e41f4bd9773fe31b867743d93d8f}{mp4\+Parser\+::\+Hint\+Sample\+Entry\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_sample_entry_box_a8ff77bc115eb18deee12619ebfc0eaa6}{mp4\+Parser\+::\+Sample\+Entry\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_stsd_box_af748ed2c67e55eddae676e4dab286a95}{mp4\+Parser\+::\+Stsd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_url_box_a150ab47ee00eca2f2f6c37ae12946cf6}{mp4\+Parser\+::\+Url\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_dref_box_a47453502638fb6c179a0acae567396e4}{mp4\+Parser\+::\+Dref\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_nmhd_box_a958b5d3192ea2ac972c5f6f71c7cd6cc}{mp4\+Parser\+::\+Nmhd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_hmhd_box_a78bdbbff24ea09eb8844323364879f78}{mp4\+Parser\+::\+Hmhd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_smhd_box_a82ee0a15370b6fafad0dcef1081f9fd9}{mp4\+Parser\+::\+Smhd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_vmhd_box_a3dbd2d4c86f22a16fe0e345fecad8fcb}{mp4\+Parser\+::\+Vmhd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_hdlr_box_a2bd53771c96860d30067c665f2a7a07a}{mp4\+Parser\+::\+Hdlr\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_mdhd_box_a8168bb0096c340422ad97250aff16528}{mp4\+Parser\+::\+Mdhd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_elst_box_a86d32e797d78cf7c00b81e2e34751324}{mp4\+Parser\+::\+Elst\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_tref_type_box_aacb791855bbbc8fd86092257f18e9889}{mp4\+Parser\+::\+Tref\+Type\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_tkhd_box_ac70fee1e0bf78ef17d799a11be040b38}{mp4\+Parser\+::\+Tkhd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_mvhd_box_accf0bc2bc09ef09f8884e9b27d03b3ac}{mp4\+Parser\+::\+Mvhd\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_styp_box_a69fb40227f9718a745b8ac3c73b38e35}{mp4\+Parser\+::\+Styp\+Box}}, \mbox{\hyperlink{classmp4_parser_1_1_ftyp_box_a89b1fd7a787bbe00967ab4a34972303b}{mp4\+Parser\+::\+Ftyp\+Box}}, and \mbox{\hyperlink{classmp4_parser_1_1_box_container_a84274dc2397087178ea6858971d399ee}{mp4\+Parser\+::\+Box\+Container}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_box_afc4a3304b9cd22cc77ed988ff03a9cfc}\label{classmp4_parser_1_1_box_afc4a3304b9cd22cc77ed988ff03a9cfc}} 
+\index{mp4Parser::Box@{mp4Parser::Box}!m\_bodyMinSize@{m\_bodyMinSize}}
+\index{m\_bodyMinSize@{m\_bodyMinSize}!mp4Parser::Box@{mp4Parser::Box}}
+\subsubsection{\texorpdfstring{m\_bodyMinSize}{m\_bodyMinSize}}
+{\footnotesize\ttfamily uint32\+\_\+t mp4\+Parser\+::\+Box\+::m\+\_\+body\+Min\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+A min size which a valid body should be. \mbox{\Hypertarget{classmp4_parser_1_1_box_a795d4a890b967c920cb922c51606e3c3}\label{classmp4_parser_1_1_box_a795d4a890b967c920cb922c51606e3c3}} 
+\index{mp4Parser::Box@{mp4Parser::Box}!m\_pos@{m\_pos}}
+\index{m\_pos@{m\_pos}!mp4Parser::Box@{mp4Parser::Box}}
+\subsubsection{\texorpdfstring{m\_pos}{m\_pos}}
+{\footnotesize\ttfamily off64\+\_\+t mp4\+Parser\+::\+Box\+::m\+\_\+pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+The position at which the box exists in the mp4 file.\+But this value is only valid for the box whose container is file, for example moov, mdat, free and so on. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/box.\+cpp\end{DoxyCompactItemize}

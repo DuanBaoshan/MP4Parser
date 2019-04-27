@@ -1,0 +1,49 @@
+\hypertarget{classmp4_parser_1_1_npck_box}{}\section{mp4\+Parser\+::Npck\+Box Class Reference}
+\label{classmp4_parser_1_1_npck_box}\index{mp4Parser::NpckBox@{mp4Parser::NpckBox}}
+Inheritance diagram for mp4\+Parser\+::Npck\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmp4_parser_1_1_npck_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_npck_box_afd40d4a46c1f3ab4e09827ea02322685}\label{classmp4_parser_1_1_npck_box_afd40d4a46c1f3ab4e09827ea02322685}} 
+{\bfseries Npck\+Box} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_npck_box_abd131fd0a9473b8f7b79500a588cc8a4}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_npck_box_a4e38bb54a18507982a1969ebe3dc0e4a}\label{classmp4_parser_1_1_npck_box_a4e38bb54a18507982a1969ebe3dc0e4a}} 
+uint32\+\_\+t {\bfseries packets\+Sent} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_npck_box_ac13c26e97587a463ee70bc1b0861f99c}\label{classmp4_parser_1_1_npck_box_ac13c26e97587a463ee70bc1b0861f99c}} 
+virtual int {\bfseries show\+Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_npck_box_abd131fd0a9473b8f7b79500a588cc8a4}\label{classmp4_parser_1_1_npck_box_abd131fd0a9473b8f7b79500a588cc8a4}} 
+\index{mp4Parser::NpckBox@{mp4Parser::NpckBox}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::NpckBox@{mp4Parser::NpckBox}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Npck\+Box\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented from \mbox{\hyperlink{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}{mp4\+Parser\+::\+Box}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/npckbox.\+cpp\end{DoxyCompactItemize}

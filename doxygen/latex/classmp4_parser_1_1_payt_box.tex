@@ -1,0 +1,55 @@
+\hypertarget{classmp4_parser_1_1_payt_box}{}\section{mp4\+Parser\+::Payt\+Box Class Reference}
+\label{classmp4_parser_1_1_payt_box}\index{mp4Parser::PaytBox@{mp4Parser::PaytBox}}
+Inheritance diagram for mp4\+Parser\+::Payt\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmp4_parser_1_1_payt_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_payt_box_a947542569fc8733b27173a2c8f4f4344}\label{classmp4_parser_1_1_payt_box_a947542569fc8733b27173a2c8f4f4344}} 
+{\bfseries Payt\+Box} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_payt_box_a95e5ecabf06b6fa4b3238fe2a495f9b3}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_payt_box_acd3fafa77e372098e9e2f4bf3364e4b0}\label{classmp4_parser_1_1_payt_box_acd3fafa77e372098e9e2f4bf3364e4b0}} 
+uint32\+\_\+t {\bfseries payload\+ID} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_payt_box_aeb44d2e8c80776b33790180b19b942ad}\label{classmp4_parser_1_1_payt_box_aeb44d2e8c80776b33790180b19b942ad}} 
+uint8\+\_\+t {\bfseries count} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_payt_box_aa87a414d11656c1af657aa2a8d0549b4}\label{classmp4_parser_1_1_payt_box_aa87a414d11656c1af657aa2a8d0549b4}} 
+const std\+::vector$<$ char $>$ \& {\bfseries rtpmap\+String} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_payt_box_aca766827b84b49a2c246fcbfa8ffa004}\label{classmp4_parser_1_1_payt_box_aca766827b84b49a2c246fcbfa8ffa004}} 
+virtual int {\bfseries show\+Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_payt_box_a95e5ecabf06b6fa4b3238fe2a495f9b3}\label{classmp4_parser_1_1_payt_box_a95e5ecabf06b6fa4b3238fe2a495f9b3}} 
+\index{mp4Parser::PaytBox@{mp4Parser::PaytBox}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::PaytBox@{mp4Parser::PaytBox}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Payt\+Box\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented from \mbox{\hyperlink{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}{mp4\+Parser\+::\+Box}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/paytbox.\+cpp\end{DoxyCompactItemize}

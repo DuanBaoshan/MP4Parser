@@ -1,0 +1,205 @@
+\subsubsection*{Synopsis}
+
+M\+P4\+Parser can read raw data from a mp4 file, then parse out mp4 box in compliance of I\+S\+O\+\_\+\+I\+E\+C\+\_\+14496-\/12\+\_\+2004(E). It will store all the boxes in a list, and provide a series of function so that you can easily find the box you instersted in. It also can output all the box information to stdout or file with beauty style. Finally, it\textquotesingle{}s very easy to add new mp4 box to M\+P4\+Parser module.
+
+Until now M\+P4\+Parser support the following mp4 boxes\+:
+\begin{DoxyItemize}
+\item audio\+\_\+sample\+\_\+entry\+\_\+box
+\item mfhdbox
+\item stypbox
+\item tfdtbox
+\item tkhdbox
+\item mehdbox
+\item mvhdbox
+\item tfhdbox
+\item namebox
+\item cttsbox
+\item nmhdbox
+\item tmaxbox
+\item dimmbox
+\item npckbox
+\item tminbox
+\item dmaxbox
+\item numpbox
+\item totlbox
+\item dmedbox
+\item paytbox
+\item tpaybox
+\item drefbox
+\item pmaxbox
+\item tpylbox
+\item drepbox
+\item rtpbox
+\item tref\+\_\+typebox
+\item elstbox
+\item sample\+\_\+entry\+\_\+box
+\item trexbox
+\item ftypbox
+\item sdpbox
+\item trpybox
+\item hdlrbox
+\item smhdbox
+\item trunbox
+\item hint\+\_\+sample\+\_\+entry\+\_\+box
+\item stcobox
+\item urlbox
+\item hmhdbox
+\item stscbox
+\item sttsbox
+\item maxrbox
+\item stsdbox
+\item visual\+\_\+sample\+\_\+entry\+\_\+box
+\item mdatbox
+\item stssbox
+\item vmhdbox
+\item mdhdbox
+\item stszbox \subsubsection*{How to use M\+P4\+Parser}
+\end{DoxyItemize}
+
+{\bfseries{1. Transfer the box list\+:}}
+
+$\ast$$\ast$(1).Use your own transfer funciton\+:$\ast$$\ast$ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{void TransferBox(const BoxPtr\_t \&box)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    //do something;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    if (!box->hasChildren())}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        return;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    BoxPtr\_t child = box->firstChild();}
+\DoxyCodeLine{    while (child)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        TransferBox(child);}
+\DoxyCodeLine{        child = child->nextSibling();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{int main()}
+\DoxyCodeLine{\{   }
+\DoxyCodeLine{    MP4Parser mp4Parser;}
+\DoxyCodeLine{    mp4Parser.parse("/your/mp4file/path/file.mp4");}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    BoxPtr\_t box = mp4Parser.getFirstBox();}
+\DoxyCodeLine{    while(box)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        TransferBox(box);}
+\DoxyCodeLine{        box = box->nextSibling();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+$\ast$$\ast$(2).Use M\+P4\+Parser\textquotesingle{}s transfer function\+:$\ast$$\ast$ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{int TransferFunc(BoxPtr\_t\& box, void *p\_userData)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    int count = 0;}
+\DoxyCodeLine{    if (strcmp(box->type(), mp4Parser::BoxFactory::MOOV\_BOX) == 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        count++;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    int *p\_count = static\_cast<int*>p\_userData;}
+\DoxyCodeLine{    *p\_count = count;}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    return 0;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{int main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    MP4Parser mp4Parser;}
+\DoxyCodeLine{    int count = 0;}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    mp4Parser.parse("/your/mp4file/path/file.mp4");}
+\DoxyCodeLine{    mp4Parser.transfer(TransferFunc, \&count);}
+\DoxyCodeLine{    cout << "Moov box count:" << count << endl;        }
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ {\bfseries{2. Find your intersted box\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{int main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    MP4Parser mp4Parser;}
+\DoxyCodeLine{    BoxPtr\_t trakBox;}
+\DoxyCodeLine{    int trakCount = 0;        }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    mp4Parser.parse("/your/mp4file/path/file.mp4");}
+\DoxyCodeLine{}
+\DoxyCodeLine{    trakCount = mp4Parser.getBoxCount("trak");}
+\DoxyCodeLine{    cout << "There are " << trakCount << " tracks." << endl;}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    trakBox = mp4Parser.getBox("trak");}
+\DoxyCodeLine{    while (trakBox)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        BoxPtr\_t tkhdBox = trakBox->findBoxInChildren("tkhd");}
+\DoxyCodeLine{        if (tkhdBox)}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            TkhdBoxPtr\_t tkhdBoxPtr = std::dynamic\_pointer\_cast<TkhdBox>(tkhdBox);}
+\DoxyCodeLine{            cout << "Track ID:" << tkhdBoxPtr->trackID() << endl;}
+\DoxyCodeLine{            cout << "    Duration:" << tkhdBoxPtr->duration() << endl;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        BoxPtr\_t hdlrBox = trakBox->findBoxInChildren("hdlr");}
+\DoxyCodeLine{        if (tkhdBox)}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            HdlrBoxPtr\_t hdlrBoxPtr = std::dynamic\_pointer\_cast<HdlrBox>(hdlrBox);}
+\DoxyCodeLine{            uint32\_t hdlrType = hdlrBoxPtr->handlerType();}
+\DoxyCodeLine{            cout << "    Handler type:" << HdlrBox::HANDLER\_TYPE\_MAP[(HandlerType\_e)hdlrType].c\_str()}
+\DoxyCodeLine{             << "(0x" << hex << uppercase << hdlrType << ")" << dec << endl;}
+\DoxyCodeLine{            cout << "    Handler Name:" << hdlrBoxPtr->name() << endl;}
+\DoxyCodeLine{        \}   }
+\DoxyCodeLine{}
+\DoxyCodeLine{        BoxPtr\_t mdhdBox = trakBox->findBoxInChildren("mdhd");}
+\DoxyCodeLine{        if (mdhdBox)}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            MdhdBoxPtr\_t mdhdBoxPtr = std::dynamic\_pointer\_cast<MdhdBox>(mdhdBox);}
+\DoxyCodeLine{            cout << "    Language:'" << mdhdBoxPtr->language() << "'" << endl;}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{        trakBox = mp4Parser.getNextBox(trakBox);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    return 0;}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ {\bfseries{3. Output box information\+:}} 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{int main()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    MP4Parser mp4Parser;}
+\DoxyCodeLine{    BoxPtr\_t trakBox;       }
+\DoxyCodeLine{    }
+\DoxyCodeLine{    mp4Parser.parse("/your/mp4file/path/file.mp4"); }
+\DoxyCodeLine{    mp4Parser.outputBoxList();//Output to the stdout.}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    mp4Parser.setDstFile("/your/resultfile/path/resut.txt");}
+\DoxyCodeLine{    mp4Parser.outputBoxList();//Output to a file.}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    mp4Parser.redirectOut2File();}
+\DoxyCodeLine{    cout << "This line will be written into the result file." << endl;}
+\DoxyCodeLine{    mp4Parser.outputBoxList();//Output to a file.}
+\DoxyCodeLine{}
+\DoxyCodeLine{    mp4Parser.restore2Stdout();}
+\DoxyCodeLine{    cout << "This line will not be written into the result file." << endl;}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    mp4Parser.setDstFile("");}
+\DoxyCodeLine{    mp4Parser.outputBoxList();//Output to the stdout again.        }
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+ {\bfseries{4. Add new box\+:}}
+
+(1).Add a new box class, if it is a container box, then inherits from class Box\+Container, or else inherits from class Box.
+
+(2).Implement the virtual function parse\+Body() and show\+Body().
+
+(3).Implment other private function of its own.
+
+(4).Add new box name variable to Box\+Factory class in \mbox{\hyperlink{boxfactory_8h_source}{boxfactory.\+h}}, for example\+: static const char$\ast$ N\+E\+W\+\_\+\+B\+OX;
+
+(5).Implement the new box name in Box\+Factory class in boxfactory.\+cpp, for example\+: const char$\ast$ Box\+Factory\+::\+F\+R\+E\+E\+\_\+\+B\+OX = \char`\"{}new\+\_\+box\char`\"{};
+
+(6).Return a new object from create\+Box() when use the new box name to create it. 

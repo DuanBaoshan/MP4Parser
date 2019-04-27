@@ -1,0 +1,86 @@
+\hypertarget{classmp4_parser_1_1_box_list}{}\section{mp4\+Parser\+::Box\+List Class Reference}
+\label{classmp4_parser_1_1_box_list}\index{mp4Parser::BoxList@{mp4Parser::BoxList}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_list_a8b2c7394dd94d6605d300dc3bf8e2c0c}\label{classmp4_parser_1_1_box_list_a8b2c7394dd94d6605d300dc3bf8e2c0c}} 
+int {\bfseries insert\+Box} (Box\+Ptr\+\_\+t \&box)
+\item 
+int \mbox{\hyperlink{classmp4_parser_1_1_box_list_ac8f02d0f68e98f348019268127eba98a}{get\+Box\+Count}} (const char $\ast$p\+\_\+box\+Type) const
+\begin{DoxyCompactList}\small\item\em Search in the box list to find the total count of boxes with the same p\+\_\+box\+Type. \end{DoxyCompactList}\item 
+Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_box_list_a0cb719a35dca3955405798beb065c7ce}{get\+Box}} (const char $\ast$p\+\_\+box\+Type) const
+\begin{DoxyCompactList}\small\item\em Search in the box list which type is equal to parameter p\+\_\+box\+Type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_list_a5b8ac5b56e5f900d9edf44927303b016}\label{classmp4_parser_1_1_box_list_a5b8ac5b56e5f900d9edf44927303b016}} 
+Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_box_list_a5b8ac5b56e5f900d9edf44927303b016}{get\+Next\+Box}} (const Box\+Ptr\+\_\+t \&cur\+Box) const
+\begin{DoxyCompactList}\small\item\em Get the next box from box list which has the same type as cur\+Box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_list_ab0ab35c6ac6c8ee8ae5aa511142c6734}\label{classmp4_parser_1_1_box_list_ab0ab35c6ac6c8ee8ae5aa511142c6734}} 
+Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_box_list_ab0ab35c6ac6c8ee8ae5aa511142c6734}{get\+First\+Box}} () const
+\begin{DoxyCompactList}\small\item\em Get the first box in the box list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmp4_parser_1_1_box_list_a81f1fd91e205e558a4ac89c481179483}{transfer}} (Transfer\+Func\+\_\+t transfer\+Func, void $\ast$p\+\_\+user\+Data)
+\begin{DoxyCompactList}\small\item\em Transfer the whole box list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_list_a92a1d673426cd0529d42d6e36aff70a5}\label{classmp4_parser_1_1_box_list_a92a1d673426cd0529d42d6e36aff70a5}} 
+int {\bfseries show} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_list_a24658953697e507b3d92663372853499}\label{classmp4_parser_1_1_box_list_a24658953697e507b3d92663372853499}} 
+int {\bfseries show} (int index) const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_list_a477e2897d99578461e78c938955b57de}\label{classmp4_parser_1_1_box_list_a477e2897d99578461e78c938955b57de}} 
+int {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_box_list_a4a8a5e53fe9c70504fd4831b54ec0923}\label{classmp4_parser_1_1_box_list_a4a8a5e53fe9c70504fd4831b54ec0923}} 
+uint64\+\_\+t {\bfseries length} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_box_list_a0cb719a35dca3955405798beb065c7ce}\label{classmp4_parser_1_1_box_list_a0cb719a35dca3955405798beb065c7ce}} 
+\index{mp4Parser::BoxList@{mp4Parser::BoxList}!getBox@{getBox}}
+\index{getBox@{getBox}!mp4Parser::BoxList@{mp4Parser::BoxList}}
+\subsubsection{\texorpdfstring{getBox()}{getBox()}}
+{\footnotesize\ttfamily Box\+Ptr\+\_\+t mp4\+Parser\+::\+Box\+List\+::get\+Box (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p\+\_\+box\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Search in the box list which type is equal to parameter p\+\_\+box\+Type. 
+
+It will only return the first found box even though there are more than one box.\+If there are more than box with p\+\_\+box\+Type, and you need get all the boxes, you can call get\+Next\+Box again and again, until the returned box is null. \mbox{\Hypertarget{classmp4_parser_1_1_box_list_ac8f02d0f68e98f348019268127eba98a}\label{classmp4_parser_1_1_box_list_ac8f02d0f68e98f348019268127eba98a}} 
+\index{mp4Parser::BoxList@{mp4Parser::BoxList}!getBoxCount@{getBoxCount}}
+\index{getBoxCount@{getBoxCount}!mp4Parser::BoxList@{mp4Parser::BoxList}}
+\subsubsection{\texorpdfstring{getBoxCount()}{getBoxCount()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Box\+List\+::get\+Box\+Count (\begin{DoxyParamCaption}\item[{const char $\ast$}]{p\+\_\+box\+Type }\end{DoxyParamCaption}) const}
+
+
+
+Search in the box list to find the total count of boxes with the same p\+\_\+box\+Type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+box\+Type} & box type string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+R\+R\+\_\+\+OK for success, other for failure 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmp4_parser_1_1_box_list_a81f1fd91e205e558a4ac89c481179483}\label{classmp4_parser_1_1_box_list_a81f1fd91e205e558a4ac89c481179483}} 
+\index{mp4Parser::BoxList@{mp4Parser::BoxList}!transfer@{transfer}}
+\index{transfer@{transfer}!mp4Parser::BoxList@{mp4Parser::BoxList}}
+\subsubsection{\texorpdfstring{transfer()}{transfer()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Box\+List\+::transfer (\begin{DoxyParamCaption}\item[{Transfer\+Func\+\_\+t}]{transfer\+Func,  }\item[{void $\ast$}]{p\+\_\+user\+Data }\end{DoxyParamCaption})}
+
+
+
+Transfer the whole box list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transfer\+Func} & user transfer function \\
+\hline
+{\em p\+\_\+user\+Data} & user data \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/boxlist.\+cpp\end{DoxyCompactItemize}

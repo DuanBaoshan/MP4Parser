@@ -1,0 +1,79 @@
+\hypertarget{classmp4_parser_1_1_tfhd_box}{}\section{mp4\+Parser\+::Tfhd\+Box Class Reference}
+\label{classmp4_parser_1_1_tfhd_box}\index{mp4Parser::TfhdBox@{mp4Parser::TfhdBox}}
+Inheritance diagram for mp4\+Parser\+::Tfhd\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmp4_parser_1_1_tfhd_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_a4299ec9db394485a0483b77175920d06}\label{classmp4_parser_1_1_tfhd_box_a4299ec9db394485a0483b77175920d06}} 
+{\bfseries Tfhd\+Box} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_tfhd_box_a9cbc2c42c59b678d13193fdb46a07314}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_aef7609e6ff5c78da3ff77d45f3a0e868}\label{classmp4_parser_1_1_tfhd_box_aef7609e6ff5c78da3ff77d45f3a0e868}} 
+uint32\+\_\+t {\bfseries track\+ID} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_a3db784941d829446e3ccfcab2e60868a}\label{classmp4_parser_1_1_tfhd_box_a3db784941d829446e3ccfcab2e60868a}} 
+uint64\+\_\+t {\bfseries base\+Data\+Offset} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_acd86d95a64596c7c854598c6456895c7}\label{classmp4_parser_1_1_tfhd_box_acd86d95a64596c7c854598c6456895c7}} 
+uint32\+\_\+t {\bfseries sample\+Description\+Index} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_a3854e31ae66202d26ef21b494c7652f6}\label{classmp4_parser_1_1_tfhd_box_a3854e31ae66202d26ef21b494c7652f6}} 
+uint32\+\_\+t {\bfseries default\+Sample\+Duration} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_ad7bef4fbbe52d8f5ecd4fc0e5a968f30}\label{classmp4_parser_1_1_tfhd_box_ad7bef4fbbe52d8f5ecd4fc0e5a968f30}} 
+uint32\+\_\+t {\bfseries default\+Sample\+Size} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_a20f6c9410b8a8e7e7921b11e1d528ff1}\label{classmp4_parser_1_1_tfhd_box_a20f6c9410b8a8e7e7921b11e1d528ff1}} 
+uint32\+\_\+t {\bfseries default\+Sample\+Flags} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_a663a9ca48ca6893b69ab71f20e4ff127}\label{classmp4_parser_1_1_tfhd_box_a663a9ca48ca6893b69ab71f20e4ff127}} 
+bool {\bfseries base\+Data\+Offset\+Present} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_aa38771a258cc870035062ad420128232}\label{classmp4_parser_1_1_tfhd_box_aa38771a258cc870035062ad420128232}} 
+bool {\bfseries sample\+Desc\+Index\+Present} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_af4fd94993f2876d055d75d26f14d5def}\label{classmp4_parser_1_1_tfhd_box_af4fd94993f2876d055d75d26f14d5def}} 
+bool {\bfseries default\+Sample\+Duration\+Rresent} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_a9609d7255efda11192a2e9d3df761ef3}\label{classmp4_parser_1_1_tfhd_box_a9609d7255efda11192a2e9d3df761ef3}} 
+bool {\bfseries default\+Sample\+Size\+Present} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_a2cbdcfea4aebc019de5256cadd3ed47c}\label{classmp4_parser_1_1_tfhd_box_a2cbdcfea4aebc019de5256cadd3ed47c}} 
+bool {\bfseries default\+Sample\+Flags\+Present} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_a54350128dd08531665876e50e6ce3fa3}\label{classmp4_parser_1_1_tfhd_box_a54350128dd08531665876e50e6ce3fa3}} 
+virtual int {\bfseries show\+Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_tfhd_box_a9cbc2c42c59b678d13193fdb46a07314}\label{classmp4_parser_1_1_tfhd_box_a9cbc2c42c59b678d13193fdb46a07314}} 
+\index{mp4Parser::TfhdBox@{mp4Parser::TfhdBox}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::TfhdBox@{mp4Parser::TfhdBox}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Tfhd\+Box\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented from \mbox{\hyperlink{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}{mp4\+Parser\+::\+Box}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/tfhdbox.\+cpp\end{DoxyCompactItemize}

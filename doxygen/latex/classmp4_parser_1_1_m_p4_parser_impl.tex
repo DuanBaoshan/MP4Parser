@@ -1,0 +1,52 @@
+\hypertarget{classmp4_parser_1_1_m_p4_parser_impl}{}\section{mp4\+Parser\+::M\+P4\+Parser\+Impl Class Reference}
+\label{classmp4_parser_1_1_m_p4_parser_impl}\index{mp4Parser::MP4ParserImpl@{mp4Parser::MP4ParserImpl}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a9dc0fccb9f31f282cfe6433dcd732234}\label{classmp4_parser_1_1_m_p4_parser_impl_a9dc0fccb9f31f282cfe6433dcd732234}} 
+int {\bfseries parse} (const std\+::string \&src\+File\+Name)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a8e4ecdd02ac4c0296559799f9c96ec70}\label{classmp4_parser_1_1_m_p4_parser_impl_a8e4ecdd02ac4c0296559799f9c96ec70}} 
+int {\bfseries output\+Box\+List} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a80b0f82a8f1ab9be1702791816b07a52}\label{classmp4_parser_1_1_m_p4_parser_impl_a80b0f82a8f1ab9be1702791816b07a52}} 
+int {\bfseries get\+Box\+Count} (const char $\ast$p\+\_\+box\+Type) const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a476636b183880adcbc5acb4581c246b4}\label{classmp4_parser_1_1_m_p4_parser_impl_a476636b183880adcbc5acb4581c246b4}} 
+mp4\+Parser\+::\+Box\+Ptr\+\_\+t {\bfseries get\+Box} (const char $\ast$p\+\_\+box\+Type) const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a236e948d4a31ea27599acd3b8eeda908}\label{classmp4_parser_1_1_m_p4_parser_impl_a236e948d4a31ea27599acd3b8eeda908}} 
+mp4\+Parser\+::\+Box\+Ptr\+\_\+t {\bfseries get\+Next\+Box} (const mp4\+Parser\+::\+Box\+Ptr\+\_\+t \&cur\+Box) const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a9544cce06976fad9c53fb0025342c5e0}\label{classmp4_parser_1_1_m_p4_parser_impl_a9544cce06976fad9c53fb0025342c5e0}} 
+mp4\+Parser\+::\+Box\+Ptr\+\_\+t {\bfseries get\+First\+Box} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_aeb890af1a7ed0bf864bb8a8601809c08}\label{classmp4_parser_1_1_m_p4_parser_impl_aeb890af1a7ed0bf864bb8a8601809c08}} 
+bool {\bfseries exists} (const char $\ast$p\+\_\+box\+Type) const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a9359a3a2a21fdea17f0bf023d5111ad8}\label{classmp4_parser_1_1_m_p4_parser_impl_a9359a3a2a21fdea17f0bf023d5111ad8}} 
+int {\bfseries transfer} (mp4\+Parser\+::\+Transfer\+Func\+\_\+t transfer\+Func, void $\ast$p\+\_\+user\+Data)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a7f4ff13eb8e07843580b4dc205fe53e5}\label{classmp4_parser_1_1_m_p4_parser_impl_a7f4ff13eb8e07843580b4dc205fe53e5}} 
+int {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a14893e3ea92dfcfe5b5357a898d888f3}\label{classmp4_parser_1_1_m_p4_parser_impl_a14893e3ea92dfcfe5b5357a898d888f3}} 
+std\+::string {\bfseries src\+File} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a4e503fd395c8d7cd46c605e4a4b23584}\label{classmp4_parser_1_1_m_p4_parser_impl_a4e503fd395c8d7cd46c605e4a4b23584}} 
+std\+::string {\bfseries dst\+File} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a3840df626f2163013bf0e94c7aac2f14}\label{classmp4_parser_1_1_m_p4_parser_impl_a3840df626f2163013bf0e94c7aac2f14}} 
+int {\bfseries set\+Dst\+File} (const std\+::string \&output\+File\+Path)
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_a45c57a93171667ba2361ef95292d5b9b}\label{classmp4_parser_1_1_m_p4_parser_impl_a45c57a93171667ba2361ef95292d5b9b}} 
+int {\bfseries redirect\+Out2\+File} ()
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_impl_aeed8ee718587393e3fc730cbe0f60ce7}\label{classmp4_parser_1_1_m_p4_parser_impl_aeed8ee718587393e3fc730cbe0f60ce7}} 
+int {\bfseries restore2\+Stdout} ()
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/src/mp4parser.\+cpp\end{DoxyCompactItemize}

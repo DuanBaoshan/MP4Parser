@@ -1,0 +1,81 @@
+\hypertarget{classmp4_parser_1_1_trun_box}{}\section{mp4\+Parser\+::Trun\+Box Class Reference}
+\label{classmp4_parser_1_1_trun_box}\index{mp4Parser::TrunBox@{mp4Parser::TrunBox}}
+Inheritance diagram for mp4\+Parser\+::Trun\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmp4_parser_1_1_trun_box}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structmp4_parser_1_1_trun_box_1_1_sample_info__t}{Sample\+Info\+\_\+t}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_adfc58d1d01862b89a6180100799c90b9}\label{classmp4_parser_1_1_trun_box_adfc58d1d01862b89a6180100799c90b9}} 
+{\bfseries Trun\+Box} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_trun_box_ac17bd64107ffbada335874e12d8a8a25}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_a28c8e086ea06c071022d147ab2efe9b8}\label{classmp4_parser_1_1_trun_box_a28c8e086ea06c071022d147ab2efe9b8}} 
+uint32\+\_\+t {\bfseries sample\+Count} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_a4323b6265307a326db79288ebff7d422}\label{classmp4_parser_1_1_trun_box_a4323b6265307a326db79288ebff7d422}} 
+uint32\+\_\+t {\bfseries data\+Offset} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_a4f72976c60fa4ecc7f6e7f53e7219f05}\label{classmp4_parser_1_1_trun_box_a4f72976c60fa4ecc7f6e7f53e7219f05}} 
+uint32\+\_\+t {\bfseries first\+Sample\+Flags} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_adc79ed2080b90ebb80cad02a0c477056}\label{classmp4_parser_1_1_trun_box_adc79ed2080b90ebb80cad02a0c477056}} 
+const std\+::vector$<$ \mbox{\hyperlink{structmp4_parser_1_1_trun_box_1_1_sample_info__t}{Sample\+Info\+\_\+t}} $>$ \& {\bfseries sample\+Info\+Array} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_a57ee728814056de91633c3cd00df5559}\label{classmp4_parser_1_1_trun_box_a57ee728814056de91633c3cd00df5559}} 
+bool {\bfseries data\+Offset\+Present} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_a29c289631bd9f128c24d9c0467474fdf}\label{classmp4_parser_1_1_trun_box_a29c289631bd9f128c24d9c0467474fdf}} 
+bool {\bfseries first\+Sample\+Flags\+Present} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_a9ddb52f2e6f243beabc2ce371e0fb3c9}\label{classmp4_parser_1_1_trun_box_a9ddb52f2e6f243beabc2ce371e0fb3c9}} 
+bool {\bfseries sample\+Duration\+Present} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_a26e0205d5e088dad88fd9b71a808dca4}\label{classmp4_parser_1_1_trun_box_a26e0205d5e088dad88fd9b71a808dca4}} 
+bool {\bfseries sample\+Size\+Present} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_acb2dad8a878a9a9e872552762ace1f8b}\label{classmp4_parser_1_1_trun_box_acb2dad8a878a9a9e872552762ace1f8b}} 
+bool {\bfseries sample\+Flags\+Present} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_a8f3946be8688eaff1948ee4d6103c1db}\label{classmp4_parser_1_1_trun_box_a8f3946be8688eaff1948ee4d6103c1db}} 
+bool {\bfseries sample\+Composition\+Time\+Offsets\+Present} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_abb97971cfb927c15769a843638946305}\label{classmp4_parser_1_1_trun_box_abb97971cfb927c15769a843638946305}} 
+virtual int {\bfseries show\+Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_trun_box_ac17bd64107ffbada335874e12d8a8a25}\label{classmp4_parser_1_1_trun_box_ac17bd64107ffbada335874e12d8a8a25}} 
+\index{mp4Parser::TrunBox@{mp4Parser::TrunBox}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::TrunBox@{mp4Parser::TrunBox}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Trun\+Box\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented from \mbox{\hyperlink{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}{mp4\+Parser\+::\+Box}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/trunbox.\+cpp\end{DoxyCompactItemize}

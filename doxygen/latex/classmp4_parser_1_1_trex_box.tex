@@ -1,0 +1,61 @@
+\hypertarget{classmp4_parser_1_1_trex_box}{}\section{mp4\+Parser\+::Trex\+Box Class Reference}
+\label{classmp4_parser_1_1_trex_box}\index{mp4Parser::TrexBox@{mp4Parser::TrexBox}}
+Inheritance diagram for mp4\+Parser\+::Trex\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmp4_parser_1_1_trex_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trex_box_a7c2f4461656ec66e54218b32c9248fb5}\label{classmp4_parser_1_1_trex_box_a7c2f4461656ec66e54218b32c9248fb5}} 
+{\bfseries Trex\+Box} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_trex_box_af4b5616abea11f60d63af8f9070fafdf}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trex_box_a05475517ee3ab660d87223ba0162423b}\label{classmp4_parser_1_1_trex_box_a05475517ee3ab660d87223ba0162423b}} 
+uint32\+\_\+t {\bfseries track\+ID} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trex_box_a61f168e385118e114d9b9da88e801025}\label{classmp4_parser_1_1_trex_box_a61f168e385118e114d9b9da88e801025}} 
+uint32\+\_\+t {\bfseries default\+Sample\+Description\+Index} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trex_box_a80f92dc25c78b0eec8b1ea0bc53aab9f}\label{classmp4_parser_1_1_trex_box_a80f92dc25c78b0eec8b1ea0bc53aab9f}} 
+uint32\+\_\+t {\bfseries default\+Sample\+Duration} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trex_box_aea11c36fa0c4d77a616b2fd2fb6ce608}\label{classmp4_parser_1_1_trex_box_aea11c36fa0c4d77a616b2fd2fb6ce608}} 
+uint32\+\_\+t {\bfseries default\+Sample\+Size} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trex_box_a524ad4a3e7412f1c9861fc3bde00ebb1}\label{classmp4_parser_1_1_trex_box_a524ad4a3e7412f1c9861fc3bde00ebb1}} 
+uint32\+\_\+t {\bfseries default\+Sample\+Flags} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_trex_box_afd180fe67bdca7a81bb024dacf914167}\label{classmp4_parser_1_1_trex_box_afd180fe67bdca7a81bb024dacf914167}} 
+virtual int {\bfseries show\+Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_trex_box_af4b5616abea11f60d63af8f9070fafdf}\label{classmp4_parser_1_1_trex_box_af4b5616abea11f60d63af8f9070fafdf}} 
+\index{mp4Parser::TrexBox@{mp4Parser::TrexBox}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::TrexBox@{mp4Parser::TrexBox}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Trex\+Box\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented from \mbox{\hyperlink{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}{mp4\+Parser\+::\+Box}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/trexbox.\+cpp\end{DoxyCompactItemize}

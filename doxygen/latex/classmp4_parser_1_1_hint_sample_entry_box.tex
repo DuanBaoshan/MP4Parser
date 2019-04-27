@@ -1,0 +1,49 @@
+\hypertarget{classmp4_parser_1_1_hint_sample_entry_box}{}\section{mp4\+Parser\+::Hint\+Sample\+Entry\+Box Class Reference}
+\label{classmp4_parser_1_1_hint_sample_entry_box}\index{mp4Parser::HintSampleEntryBox@{mp4Parser::HintSampleEntryBox}}
+Inheritance diagram for mp4\+Parser\+::Hint\+Sample\+Entry\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classmp4_parser_1_1_hint_sample_entry_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_hint_sample_entry_box_a9cd826fdcf281a2b9f107e000ed10016}\label{classmp4_parser_1_1_hint_sample_entry_box_a9cd826fdcf281a2b9f107e000ed10016}} 
+{\bfseries Hint\+Sample\+Entry\+Box} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_hint_sample_entry_box_aa9a7e41f4bd9773fe31b867743d93d8f}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_hint_sample_entry_box_a76549bab472cda3bfad5507ff6ed2297}\label{classmp4_parser_1_1_hint_sample_entry_box_a76549bab472cda3bfad5507ff6ed2297}} 
+const std\+::vector$<$ uint8\+\_\+t $>$ \& {\bfseries data} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_hint_sample_entry_box_a41389dc4d79fc9711999cdc74e69ade3}\label{classmp4_parser_1_1_hint_sample_entry_box_a41389dc4d79fc9711999cdc74e69ade3}} 
+virtual int {\bfseries show\+Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_hint_sample_entry_box_aa9a7e41f4bd9773fe31b867743d93d8f}\label{classmp4_parser_1_1_hint_sample_entry_box_aa9a7e41f4bd9773fe31b867743d93d8f}} 
+\index{mp4Parser::HintSampleEntryBox@{mp4Parser::HintSampleEntryBox}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::HintSampleEntryBox@{mp4Parser::HintSampleEntryBox}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Hint\+Sample\+Entry\+Box\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented from \mbox{\hyperlink{classmp4_parser_1_1_sample_entry_box_a8ff77bc115eb18deee12619ebfc0eaa6}{mp4\+Parser\+::\+Sample\+Entry\+Box}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/hint\+\_\+sample\+\_\+entry\+\_\+box.\+cpp\end{DoxyCompactItemize}

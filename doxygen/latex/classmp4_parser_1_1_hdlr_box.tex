@@ -1,0 +1,78 @@
+\hypertarget{classmp4_parser_1_1_hdlr_box}{}\section{mp4\+Parser\+::Hdlr\+Box Class Reference}
+\label{classmp4_parser_1_1_hdlr_box}\index{mp4Parser::HdlrBox@{mp4Parser::HdlrBox}}
+Inheritance diagram for mp4\+Parser\+::Hdlr\+Box\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmp4_parser_1_1_hdlr_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_hdlr_box_a45c422be90d346c8b1a7bbeac9b209ef}\label{classmp4_parser_1_1_hdlr_box_a45c422be90d346c8b1a7bbeac9b209ef}} 
+{\bfseries Hdlr\+Box} (uint32\+\_\+t box\+Size, const Box\+Type\+\_\+t \&box\+Type)
+\item 
+virtual int \mbox{\hyperlink{classmp4_parser_1_1_hdlr_box_a2bd53771c96860d30067c665f2a7a07a}{parse\+Body}} (uint8\+\_\+t $\ast$p\+\_\+body, uint32\+\_\+t body\+Size)
+\begin{DoxyCompactList}\small\item\em Parse a box\textquotesingle{}s body buffer into a box structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_hdlr_box_aa4d2293675d275206b42e5952e9188a5}\label{classmp4_parser_1_1_hdlr_box_aa4d2293675d275206b42e5952e9188a5}} 
+uint32\+\_\+t {\bfseries handler\+Type} () const
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_hdlr_box_af24107fe2a9a63e6bda6d0dddaa40292}\label{classmp4_parser_1_1_hdlr_box_af24107fe2a9a63e6bda6d0dddaa40292}} 
+const char $\ast$ {\bfseries name} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::map$<$ Handler\+Type\+\_\+e, std\+::string $>$ {\bfseries H\+A\+N\+D\+L\+E\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+AP}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_hdlr_box_a2fd551eb7e4127acef508eced45807ce}\label{classmp4_parser_1_1_hdlr_box_a2fd551eb7e4127acef508eced45807ce}} 
+virtual int {\bfseries show\+Body} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_hdlr_box_a2bd53771c96860d30067c665f2a7a07a}\label{classmp4_parser_1_1_hdlr_box_a2bd53771c96860d30067c665f2a7a07a}} 
+\index{mp4Parser::HdlrBox@{mp4Parser::HdlrBox}!parseBody@{parseBody}}
+\index{parseBody@{parseBody}!mp4Parser::HdlrBox@{mp4Parser::HdlrBox}}
+\subsubsection{\texorpdfstring{parseBody()}{parseBody()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Hdlr\+Box\+::parse\+Body (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+\_\+body,  }\item[{uint32\+\_\+t}]{body\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Parse a box\textquotesingle{}s body buffer into a box structure. 
+
+A body means all the box fields except for size and type filed. For example, the body of ftypbox includes major\+\_\+brand, minor\+\_\+version and compatible\+\_\+brands\mbox{[}\mbox{]} fields. Another example is full box, the body of hdlr includes version, flags, pre\+\_\+defined,handler\+\_\+type,reserved and name fields. So the body\+Size is always equal the size of box -\/ 8. 
+
+Reimplemented from \mbox{\hyperlink{classmp4_parser_1_1_box_a3dd0c084ac65bc77b69ac5ecaf796cb2}{mp4\+Parser\+::\+Box}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmp4_parser_1_1_hdlr_box_a579fc4c163749db8164d742c46bd0d6d}\label{classmp4_parser_1_1_hdlr_box_a579fc4c163749db8164d742c46bd0d6d}} 
+\index{mp4Parser::HdlrBox@{mp4Parser::HdlrBox}!HANDLER\_TYPE\_MAP@{HANDLER\_TYPE\_MAP}}
+\index{HANDLER\_TYPE\_MAP@{HANDLER\_TYPE\_MAP}!mp4Parser::HdlrBox@{mp4Parser::HdlrBox}}
+\subsubsection{\texorpdfstring{HANDLER\_TYPE\_MAP}{HANDLER\_TYPE\_MAP}}
+{\footnotesize\ttfamily std\+::map$<$ Handler\+Type\+\_\+e, std\+::string $>$ mp4\+Parser\+::\+Hdlr\+Box\+::\+H\+A\+N\+D\+L\+E\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+AP\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{mp4Parser::INVALID\_HANDLER, \textcolor{stringliteral}{"INVALID"}\},}
+\DoxyCodeLine{    \{mp4Parser::HANDLER\_VIDE, \textcolor{stringliteral}{"VIDE"}\},}
+\DoxyCodeLine{    \{mp4Parser::HANDLER\_SOUD, \textcolor{stringliteral}{"SOUND"}\},}
+\DoxyCodeLine{    \{mp4Parser::HANDLER\_HINT, \textcolor{stringliteral}{"HINT"}\},}
+\DoxyCodeLine{    \{mp4Parser::HANDLER\_SDSM, \textcolor{stringliteral}{"SDSM"}\},}
+\DoxyCodeLine{    \{mp4Parser::HANDLER\_ODSM, \textcolor{stringliteral}{"ODSM"}\},}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/github/\+M\+P4\+Parser/include/mp4box.\+h\item 
+D\+:/github/\+M\+P4\+Parser/src/hdlrbox.\+cpp\end{DoxyCompactItemize}
