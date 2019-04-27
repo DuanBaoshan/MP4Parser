@@ -54,7 +54,33 @@ Until now MP4Parser support the following mp4 boxes:
 - stszbox
 ### How to use MP4Parser
 **1. Transfer the box list:**    
-    **(1).Use your own transfer funciton:**
+   **(1).Use MP4Parser's transfer function:**
+```
+    int TransferFunc(BoxPtr_t& box, void *p_userData)
+    {
+        int count = 0;
+        if (strcmp(box->type(), mp4Parser::BoxFactory::MOOV_BOX) == 0)
+        {
+            count++;
+        }
+        
+        int *p_count = static_cast<int*>p_userData;
+        *p_count = count;
+        
+        return 0;
+    }
+    
+    int main()
+    {
+        MP4Parser mp4Parser;
+        int count = 0;
+        
+        mp4Parser.parse("/your/mp4file/path/file.mp4");
+        mp4Parser.transfer(TransferFunc, &count);
+        cout << "Moov box count:" << count << endl;        
+    }
+```   
+   **(2).Use your own transfer funciton:**
 ```    
     void TransferBox(const BoxPtr_t &box)
     {
@@ -86,34 +112,8 @@ Until now MP4Parser support the following mp4 boxes:
             box = box->nextSibling();
         }
     }
-```
-    
-   **(2).Use MP4Parser's transfer function:**
-```
-    int TransferFunc(BoxPtr_t& box, void *p_userData)
-    {
-        int count = 0;
-        if (strcmp(box->type(), mp4Parser::BoxFactory::MOOV_BOX) == 0)
-        {
-            count++;
-        }
-        
-        int *p_count = static_cast<int*>p_userData;
-        *p_count = count;
-        
-        return 0;
-    }
-    
-    int main()
-    {
-        MP4Parser mp4Parser;
-        int count = 0;
-        
-        mp4Parser.parse("/your/mp4file/path/file.mp4");
-        mp4Parser.transfer(TransferFunc, &count);
-        cout << "Moov box count:" << count << endl;        
-    }
-```
+```    
+
 **2. Find your intersted box:**
 ```
     int main()
