@@ -2,29 +2,14 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="debug" />
-	<File name="src\boxfactory.cpp" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\elstbox.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4336" topLine="107" />
+			<Cursor1 position="3675" topLine="111" />
 		</Cursor>
 	</File>
-	<File name="include\boxfactory.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\namebox.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1853" topLine="56" />
-		</Cursor>
-	</File>
-	<File name="src\stsdbox.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2200" topLine="71" />
-		</Cursor>
-	</File>
-	<File name="src\utils.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1653" topLine="38" />
-		</Cursor>
-	</File>
-	<File name="src\sdpbox.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1949" topLine="62" />
+			<Cursor1 position="1982" topLine="62" />
 		</Cursor>
 	</File>
 	<File name="src\tkhdbox.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -32,19 +17,14 @@
 			<Cursor1 position="4179" topLine="152" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1906" topLine="67" />
-		</Cursor>
-	</File>
-	<File name="src\tpylbox.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1992" topLine="62" />
-		</Cursor>
-	</File>
 	<File name="include\mp4parser.h" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2491" topLine="89" />
+		</Cursor>
+	</File>
+	<File name="src\sdpbox.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1949" topLine="62" />
 		</Cursor>
 	</File>
 	<File name="src\tfhdbox.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -52,12 +32,37 @@
 			<Cursor1 position="3449" topLine="120" />
 		</Cursor>
 	</File>
-	<File name="src\elstbox.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\stsdbox.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="3675" topLine="111" />
+			<Cursor1 position="2200" topLine="71" />
 		</Cursor>
 	</File>
-	<File name="src\trpybox.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1906" topLine="67" />
+		</Cursor>
+	</File>
+	<File name="src\boxfactory.cpp" open="1" top="1" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7073" topLine="203" />
+		</Cursor>
+	</File>
+	<File name="include\boxfactory.h" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1215" topLine="38" />
+		</Cursor>
+	</File>
+	<File name="src\utils.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1653" topLine="38" />
+		</Cursor>
+	</File>
+	<File name="src\box.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4002" topLine="156" />
+		</Cursor>
+	</File>
+	<File name="src\tpylbox.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1992" topLine="62" />
 		</Cursor>
@@ -67,19 +72,14 @@
 			<Cursor1 position="1713" topLine="55" />
 		</Cursor>
 	</File>
-	<File name="include\mp4box.h" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\mp4box.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="7895" topLine="274" />
+			<Cursor1 position="5099" topLine="948" />
 		</Cursor>
 	</File>
-	<File name="src\box.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\trpybox.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4002" topLine="156" />
-		</Cursor>
-	</File>
-	<File name="src\namebox.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1982" topLine="62" />
+			<Cursor1 position="1992" topLine="62" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

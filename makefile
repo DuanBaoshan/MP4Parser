@@ -80,7 +80,7 @@ COMPILE_EXECUTE:main.o
 	
 %.o:%.cpp
 	@$(ECHO) Compiling:$<...  
-	@$(CXX) $(CXXFLAGS)  -o $(OBJ_DIR)/$@ -c $<
+	@$(CXX) $(CXXFLAGS) -fPIC -o $(OBJ_DIR)/$@ -c $<
 	@$(ECHO) done!
 	@$(ECHO)
 
