@@ -50,7 +50,7 @@ typedef enum
     HANDLER_ODSM = 0x6F64736D,
 }HandlerType_e;
 
-typedef int (*TransferFunc_t)(BoxPtr_t& box, void *p_userData);
+typedef int (*TraverseFunc_t)(BoxPtr_t& box, void *p_userData);
 
 class BoxList
 {
@@ -89,11 +89,11 @@ public:
     BoxPtr_t getFirstBox()const ;
 
     /**
-     * @brief Transfer the whole box list.
-     * @param transferFunc: user transfer function
+     * @brief Traverse the whole box list.
+     * @param traverseFunc: user traverse function
      * @param p_userData: user data
      */
-    int transfer(TransferFunc_t transferFunc, void *p_userData);
+    int traverse(TraverseFunc_t traverseFunc, void *p_userData);
 
     int show() const;
     int show(int index) const;
@@ -106,7 +106,7 @@ protected:
 private:
     BoxPtr_t getNextBoxFromSibling(const BoxPtr_t& nextSibling, const char* p_boxType) const;
     BoxPtr_t getNextBoxFromNextContainerUntilRoot(const BoxPtr_t& curBox, BoxPtr_t &rootContainer) const;
-    int transferBox(BoxPtr_t& box, TransferFunc_t transferFunc, void *p_userData);
+    int traverseBox(BoxPtr_t& box, TraverseFunc_t traverseFunc, void *p_userData);
 private:
     std::vector<BoxPtr_t> m_boxList;
 };
@@ -1286,7 +1286,7 @@ public:
 
 protected:
 
-private:    
+private:
     BoxBodyPtr_t m_actualBody;
 
 };

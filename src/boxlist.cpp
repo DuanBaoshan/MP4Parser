@@ -120,22 +120,22 @@ BoxPtr_t BoxList::getFirstBox()const
     return *(m_boxList.begin());
 }
 
-int BoxList::transfer(TransferFunc_t transferFunc, void *p_userData)
+int BoxList::traverse(TraverseFunc_t traverseFunc, void *p_userData)
 {
     BoxPtr_t box = getFirstBox();
 
     while (box)
     {
-        transferBox(box, transferFunc, p_userData);
+        traverseBox(box, traverseFunc, p_userData);
         box = box->nextSibling();
     }
 
     return ERR_OK;
 }
 
-int BoxList::transferBox(BoxPtr_t& box, TransferFunc_t transferFunc, void *p_userData)
+int BoxList::traverseBox(BoxPtr_t& box, TraverseFunc_t traverseFunc, void *p_userData)
 {
-    transferFunc(box, p_userData);
+    traverseFunc(box, p_userData);
 
     if (!box->hasChildren())
     {
@@ -145,7 +145,7 @@ int BoxList::transferBox(BoxPtr_t& box, TransferFunc_t transferFunc, void *p_use
     BoxPtr_t child = box->firstChild();
     while (child)
     {
-        transferBox(child, transferFunc, p_userData);
+        traverseBox(child, traverseFunc, p_userData);
         child = child->nextSibling();
     }
 

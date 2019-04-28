@@ -25,7 +25,7 @@ static int OutputMoofInfo(MP4Parser& mp4Parser);
 
 static int OutputMdat(MP4Parser& mp4Parser);
 
-static int TransferFunc(BoxPtr_t& box, void *p_userData);
+static int traverseFunc(BoxPtr_t& box, void *p_userData);
 
 
 int main(int argc, char *argv[])
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 
     BoxCount_t boxCount;
     memset(&boxCount, 0, sizeof(BoxCount_t));
-    parser.transfer(TransferFunc, &boxCount);
+    parser.traverse(traverseFunc, &boxCount);
 
     cout << "moovCount:" << boxCount.moovCount << ", moofCount:"
          << boxCount.moofCount << ", mediaCount:" << boxCount.mediaCount << ", mvhdCount:" << boxCount.mvhdCount << endl;
@@ -224,7 +224,7 @@ static int OutputMdat(MP4Parser& mp4Parser)
 	return 0;
 }
 
-static int TransferFunc(BoxPtr_t& box, void *p_userData)
+static int traverseFunc(BoxPtr_t& box, void *p_userData)
 {
     BoxCount_t *p_boxCount = static_cast<BoxCount_t*>(p_userData);
     if (strcmp(box->type(), mp4Parser::BoxFactory::MOOV_BOX) == 0)

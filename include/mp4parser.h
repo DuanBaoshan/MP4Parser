@@ -61,40 +61,12 @@ public:
 
     /**
      * @brief Get the first box from box list.
-
-     * You can transfer the whole box list like the following code:
-     * @code
-        void TransferBox(const BoxPtr_t &box)
-        {
-            //do something;
-
-            if (!box->hasChildren())
-            {
-                return;
-            }
-
-            BoxPtr_t child = box->firstChild();
-            while (child)
-            {
-                TransferBox(child);
-                child = child->nextSibling();
-            }
-
-        }
-
-        BoxPtr_t box = mp4Parser.getFirstBox();
-        while(box)
-        {
-            TransferBox(box);
-            box = box->nextSibling();
-        }
-        @endcode
      */
     BoxPtr_t getFirstBox() const;
 
     bool exists(const char* p_boxType) const;
 
-    int transfer(TransferFunc_t transferFunc, void *p_userData);
+    int traverse(TraverseFunc_t traverseFunc, void *p_userData);
 
     /**
      * @brief Clear the source file name, the parsed result(all the box information).

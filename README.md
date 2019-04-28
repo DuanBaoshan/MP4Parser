@@ -53,10 +53,10 @@ Until now MP4Parser support the following mp4 boxes:
 - mdhdbox
 - stszbox
 ### How to use MP4Parser
-**1. Transfer the box list:**    
-   **(1).Use MP4Parser's transfer function:**
+**1. Traverse the box list:**    
+   **(1).Use MP4Parser's traverse function:**
 ```
-    int TransferFunc(BoxPtr_t& box, void *p_userData)
+    int TraverseFunc(BoxPtr_t& box, void *p_userData)
     {
         int count = 0;
         if (strcmp(box->type(), mp4Parser::BoxFactory::MOOV_BOX) == 0)
@@ -76,13 +76,13 @@ Until now MP4Parser support the following mp4 boxes:
         int count = 0;
         
         mp4Parser.parse("/your/mp4file/path/file.mp4");
-        mp4Parser.transfer(TransferFunc, &count);
+        mp4Parser.traverse(TraverseFunc, &count);
         cout << "Moov box count:" << count << endl;        
     }
 ```   
-   **(2).Use your own transfer funciton:**
+   **(2).Use your own traverse funciton:**
 ```    
-    void TransferBox(const BoxPtr_t &box)
+    void TraverseBox(const BoxPtr_t &box)
     {
         //do something;
 
@@ -94,7 +94,7 @@ Until now MP4Parser support the following mp4 boxes:
         BoxPtr_t child = box->firstChild();
         while (child)
         {
-            TransferBox(child);
+            TraverseBox(child);
             child = child->nextSibling();
         }
 
@@ -108,7 +108,7 @@ Until now MP4Parser support the following mp4 boxes:
         BoxPtr_t box = mp4Parser.getFirstBox();
         while(box)
         {
-            TransferBox(box);
+            TraverseBox(box);
             box = box->nextSibling();
         }
     }

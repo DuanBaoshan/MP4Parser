@@ -64,7 +64,7 @@ public:
 
     bool exists(const char* p_boxType) const;
 
-    int transfer(mp4Parser::TransferFunc_t transferFunc, void *p_userData);
+    int traverse(mp4Parser::TraverseFunc_t traverseFunc, void *p_userData);
 
     int clear();
 
@@ -215,9 +215,9 @@ bool MP4ParserImpl::exists(const char* p_boxType) const
     return false;
 }
 
-int MP4ParserImpl::transfer(TransferFunc_t transferFunc, void *p_userData)
+int MP4ParserImpl::traverse(TraverseFunc_t traverseFunc, void *p_userData)
 {
-    return m_boxList.transfer(transferFunc, p_userData);
+    return m_boxList.traverse(traverseFunc, p_userData);
 }
 
 int MP4ParserImpl::clear()
@@ -575,9 +575,9 @@ bool MP4Parser::exists(const char* p_boxType) const
     return m_pImpl->exists(p_boxType);
 }
 
-int MP4Parser::transfer(TransferFunc_t transferFunc, void *p_userData)
+int MP4Parser::traverse(TraverseFunc_t traverseFunc, void *p_userData)
 {
-    return m_pImpl->transfer(transferFunc, p_userData);
+    return m_pImpl->traverse(traverseFunc, p_userData);
 }
 
 int MP4Parser::clear()
