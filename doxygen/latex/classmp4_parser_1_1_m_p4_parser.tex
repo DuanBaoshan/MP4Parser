@@ -15,13 +15,14 @@ Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a01d96e45863265
 \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a3ca2c14303ef53c0e3a2abe72d22c017}\label{classmp4_parser_1_1_m_p4_parser_a3ca2c14303ef53c0e3a2abe72d22c017}} 
 Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a3ca2c14303ef53c0e3a2abe72d22c017}{get\+Next\+Box}} (const Box\+Ptr\+\_\+t \&cur\+Box) const
 \begin{DoxyCompactList}\small\item\em Get the next box from box list which has the same type as cur\+Box. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a06442051ce3c360ab2842d5a2872989b}\label{classmp4_parser_1_1_m_p4_parser_a06442051ce3c360ab2842d5a2872989b}} 
 Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a06442051ce3c360ab2842d5a2872989b}{get\+First\+Box}} () const
 \begin{DoxyCompactList}\small\item\em Get the first box from box list. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a8c9f66c274d356b51afe9b62df9b7cf3}\label{classmp4_parser_1_1_m_p4_parser_a8c9f66c274d356b51afe9b62df9b7cf3}} 
 bool {\bfseries exists} (const char $\ast$p\+\_\+box\+Type) const
 \item 
-\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_af0e4d62b198de686c320271d327b02c7}\label{classmp4_parser_1_1_m_p4_parser_af0e4d62b198de686c320271d327b02c7}} 
-int {\bfseries transfer} (Transfer\+Func\+\_\+t transfer\+Func, void $\ast$p\+\_\+user\+Data)
+\mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a2c16e9ca43b6ba80d08da4047622160d}\label{classmp4_parser_1_1_m_p4_parser_a2c16e9ca43b6ba80d08da4047622160d}} 
+int {\bfseries traverse} (Traverse\+Func\+\_\+t traverse\+Func, void $\ast$p\+\_\+user\+Data)
 \item 
 \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_af1f298af86932b58b3677722b49736c0}\label{classmp4_parser_1_1_m_p4_parser_af1f298af86932b58b3677722b49736c0}} 
 int \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_af1f298af86932b58b3677722b49736c0}{clear}} ()
@@ -51,44 +52,7 @@ int \mbox{\hyperlink{classmp4_parser_1_1_m_p4_parser_a7270d8138d1e9c6db3ed4838e5
 
 Find the box which type is equal to p\+\_\+box\+Type from the box list. 
 
-It will only return the first found box even though there are more than one box.\+If there are more than one box with p\+\_\+box\+Type, and you need get all the boxes, you can call get\+Next\+Box again and again, until the returned box is null. \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_a06442051ce3c360ab2842d5a2872989b}\label{classmp4_parser_1_1_m_p4_parser_a06442051ce3c360ab2842d5a2872989b}} 
-\index{mp4Parser::MP4Parser@{mp4Parser::MP4Parser}!getFirstBox@{getFirstBox}}
-\index{getFirstBox@{getFirstBox}!mp4Parser::MP4Parser@{mp4Parser::MP4Parser}}
-\subsubsection{\texorpdfstring{getFirstBox()}{getFirstBox()}}
-{\footnotesize\ttfamily Box\+Ptr\+\_\+t mp4\+Parser\+::\+M\+P4\+Parser\+::get\+First\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-
-
-Get the first box from box list. 
-
-You can transfer the whole box list like the following code\+: 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{\textcolor{keywordtype}{void} TransferBox(\textcolor{keyword}{const} BoxPtr\_t \&box)}
-\DoxyCodeLine{\{}
-\DoxyCodeLine{    \textcolor{comment}{//do something;}}
-\DoxyCodeLine{}
-\DoxyCodeLine{    \textcolor{keywordflow}{if} (!box->hasChildren())}
-\DoxyCodeLine{    \{}
-\DoxyCodeLine{        \textcolor{keywordflow}{return};}
-\DoxyCodeLine{    \}}
-\DoxyCodeLine{}
-\DoxyCodeLine{    BoxPtr\_t child = box->firstChild();}
-\DoxyCodeLine{    \textcolor{keywordflow}{while} (child)}
-\DoxyCodeLine{    \{}
-\DoxyCodeLine{        TransferBox(child);}
-\DoxyCodeLine{        child = child->nextSibling();}
-\DoxyCodeLine{    \}}
-\DoxyCodeLine{}
-\DoxyCodeLine{\}}
-\DoxyCodeLine{}
-\DoxyCodeLine{BoxPtr\_t box = \mbox{\hyperlink{namespacemp4_parser}{mp4Parser}}.getFirstBox();}
-\DoxyCodeLine{\textcolor{keywordflow}{while}(box)}
-\DoxyCodeLine{\{}
-\DoxyCodeLine{    TransferBox(box);}
-\DoxyCodeLine{    box = box->nextSibling();}
-\DoxyCodeLine{\}}
-\end{DoxyCode}
- \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_aded5fb465d00d6a7cdde6fa276615c49}\label{classmp4_parser_1_1_m_p4_parser_aded5fb465d00d6a7cdde6fa276615c49}} 
+It will only return the first found box even though there are more than one box.\+If there are more than one box with p\+\_\+box\+Type, and you need get all the boxes, you can call get\+Next\+Box again and again, until the returned box is null. \mbox{\Hypertarget{classmp4_parser_1_1_m_p4_parser_aded5fb465d00d6a7cdde6fa276615c49}\label{classmp4_parser_1_1_m_p4_parser_aded5fb465d00d6a7cdde6fa276615c49}} 
 \index{mp4Parser::MP4Parser@{mp4Parser::MP4Parser}!outputBoxList@{outputBoxList}}
 \index{outputBoxList@{outputBoxList}!mp4Parser::MP4Parser@{mp4Parser::MP4Parser}}
 \subsubsection{\texorpdfstring{outputBoxList()}{outputBoxList()}}

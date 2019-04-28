@@ -56,46 +56,11 @@ Until now M\+P4\+Parser support the following mp4 boxes\+:
 \item stszbox \subsubsection*{How to use M\+P4\+Parser}
 \end{DoxyItemize}
 
-{\bfseries{1. Transfer the box list\+:}}
+{\bfseries{1. Traverse the box list\+:}}
 
-$\ast$$\ast$(1).Use your own transfer funciton\+:$\ast$$\ast$ 
+$\ast$$\ast$(1).Use M\+P4\+Parser\textquotesingle{}s traverse function\+:$\ast$$\ast$ 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{void TransferBox(const BoxPtr\_t \&box)}
-\DoxyCodeLine{\{}
-\DoxyCodeLine{    //do something;}
-\DoxyCodeLine{}
-\DoxyCodeLine{    if (!box->hasChildren())}
-\DoxyCodeLine{    \{}
-\DoxyCodeLine{        return;}
-\DoxyCodeLine{    \}}
-\DoxyCodeLine{}
-\DoxyCodeLine{    BoxPtr\_t child = box->firstChild();}
-\DoxyCodeLine{    while (child)}
-\DoxyCodeLine{    \{}
-\DoxyCodeLine{        TransferBox(child);}
-\DoxyCodeLine{        child = child->nextSibling();}
-\DoxyCodeLine{    \}}
-\DoxyCodeLine{}
-\DoxyCodeLine{\}}
-\DoxyCodeLine{}
-\DoxyCodeLine{int main()}
-\DoxyCodeLine{\{   }
-\DoxyCodeLine{    MP4Parser mp4Parser;}
-\DoxyCodeLine{    mp4Parser.parse("/your/mp4file/path/file.mp4");}
-\DoxyCodeLine{    }
-\DoxyCodeLine{    BoxPtr\_t box = mp4Parser.getFirstBox();}
-\DoxyCodeLine{    while(box)}
-\DoxyCodeLine{    \{}
-\DoxyCodeLine{        TransferBox(box);}
-\DoxyCodeLine{        box = box->nextSibling();}
-\DoxyCodeLine{    \}}
-\DoxyCodeLine{\}}
-\end{DoxyCode}
-
-
-$\ast$$\ast$(2).Use M\+P4\+Parser\textquotesingle{}s transfer function\+:$\ast$$\ast$ 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{int TransferFunc(BoxPtr\_t\& box, void *p\_userData)}
+\DoxyCodeLine{int TraverseFunc(BoxPtr\_t\& box, void *p\_userData)}
 \DoxyCodeLine{\{}
 \DoxyCodeLine{    int count = 0;}
 \DoxyCodeLine{    if (strcmp(box->type(), mp4Parser::BoxFactory::MOOV\_BOX) == 0)}
@@ -115,11 +80,46 @@ $\ast$$\ast$(2).Use M\+P4\+Parser\textquotesingle{}s transfer function\+:$\ast$$
 \DoxyCodeLine{    int count = 0;}
 \DoxyCodeLine{    }
 \DoxyCodeLine{    mp4Parser.parse("/your/mp4file/path/file.mp4");}
-\DoxyCodeLine{    mp4Parser.transfer(TransferFunc, \&count);}
+\DoxyCodeLine{    mp4Parser.traverse(TraverseFunc, \&count);}
 \DoxyCodeLine{    cout << "Moov box count:" << count << endl;        }
 \DoxyCodeLine{\}}
 \end{DoxyCode}
- {\bfseries{2. Find your intersted box\+:}} 
+ $\ast$$\ast$(2).Use your own traverse funciton\+:$\ast$$\ast$ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{void TraverseBox(const BoxPtr\_t \&box)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    //do something;}
+\DoxyCodeLine{}
+\DoxyCodeLine{    if (!box->hasChildren())}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        return;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    BoxPtr\_t child = box->firstChild();}
+\DoxyCodeLine{    while (child)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        TraverseBox(child);}
+\DoxyCodeLine{        child = child->nextSibling();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{int main()}
+\DoxyCodeLine{\{   }
+\DoxyCodeLine{    MP4Parser mp4Parser;}
+\DoxyCodeLine{    mp4Parser.parse("/your/mp4file/path/file.mp4");}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    BoxPtr\_t box = mp4Parser.getFirstBox();}
+\DoxyCodeLine{    while(box)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{        TraverseBox(box);}
+\DoxyCodeLine{        box = box->nextSibling();}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+{\bfseries{2. Find your intersted box\+:}} 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{int main()}
 \DoxyCodeLine{\{}
@@ -190,7 +190,9 @@ $\ast$$\ast$(2).Use M\+P4\+Parser\textquotesingle{}s transfer function\+:$\ast$$
 \DoxyCodeLine{    mp4Parser.outputBoxList();//Output to the stdout again.        }
 \DoxyCodeLine{\}}
 \end{DoxyCode}
- {\bfseries{4. Add new box\+:}}
+
+
+{\bfseries{4. Add new box\+:}}
 
 (1).Add a new box class, if it is a container box, then inherits from class Box\+Container, or else inherits from class Box.
 
@@ -202,4 +204,10 @@ $\ast$$\ast$(2).Use M\+P4\+Parser\textquotesingle{}s transfer function\+:$\ast$$
 
 (5).Implement the new box name in Box\+Factory class in boxfactory.\+cpp, for example\+: const char$\ast$ Box\+Factory\+::\+F\+R\+E\+E\+\_\+\+B\+OX = \char`\"{}new\+\_\+box\char`\"{};
 
-(6).Return a new object from create\+Box() when use the new box name to create it. 
+(6).Return a new object from create\+Box() when use the new box name to create it.
+
+{\bfseries{5.\+How to compile\+:}}
+
+(1).You can use Code\+Blocks to open the Mp4\+Parser.\+cbp to compile on Window platform.
+
+(2).You also can use make command to compile on Linux platform. 

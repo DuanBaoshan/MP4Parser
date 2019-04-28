@@ -94,9 +94,9 @@ BoxPtr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 BoxPtr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmp4_parser_1_1_box_list.html#ab0ab35c6ac6c8ee8ae5aa511142c6734">getFirstBox</a> () const</td></tr>
 <tr class="memdesc:ab0ab35c6ac6c8ee8ae5aa511142c6734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first box in the box list. <br /></td></tr>
 <tr class="separator:ab0ab35c6ac6c8ee8ae5aa511142c6734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81f1fd91e205e558a4ac89c481179483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmp4_parser_1_1_box_list.html#a81f1fd91e205e558a4ac89c481179483">transfer</a> (TransferFunc_t transferFunc, void *p_userData)</td></tr>
-<tr class="memdesc:a81f1fd91e205e558a4ac89c481179483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer the whole box list.  <a href="#a81f1fd91e205e558a4ac89c481179483">More...</a><br /></td></tr>
-<tr class="separator:a81f1fd91e205e558a4ac89c481179483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24de75849802054ff8d40a12f1120f85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmp4_parser_1_1_box_list.html#a24de75849802054ff8d40a12f1120f85">traverse</a> (TraverseFunc_t traverseFunc, void *p_userData)</td></tr>
+<tr class="memdesc:a24de75849802054ff8d40a12f1120f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traverse the whole box list.  <a href="#a24de75849802054ff8d40a12f1120f85">More...</a><br /></td></tr>
+<tr class="separator:a24de75849802054ff8d40a12f1120f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92a1d673426cd0529d42d6e36aff70a5"><td class="memItemLeft" align="right" valign="top"><a id="a92a1d673426cd0529d42d6e36aff70a5"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>show</b> () const</td></tr>
 <tr class="separator:a92a1d673426cd0529d42d6e36aff70a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,17 +159,17 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>length</b> () con
 
 </div>
 </div>
-<a id="a81f1fd91e205e558a4ac89c481179483"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81f1fd91e205e558a4ac89c481179483">&#9670;&nbsp;</a></span>transfer()</h2>
+<a id="a24de75849802054ff8d40a12f1120f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24de75849802054ff8d40a12f1120f85">&#9670;&nbsp;</a></span>traverse()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int mp4Parser::BoxList::transfer </td>
+          <td class="memname">int mp4Parser::BoxList::traverse </td>
           <td>(</td>
-          <td class="paramtype">TransferFunc_t&#160;</td>
-          <td class="paramname"><em>transferFunc</em>, </td>
+          <td class="paramtype">TraverseFunc_t&#160;</td>
+          <td class="paramname"><em>traverseFunc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -185,10 +185,10 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>length</b> () con
       </table>
 </div><div class="memdoc">
 
-<p>Transfer the whole box list. </p>
+<p>Traverse the whole box list. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">transferFunc</td><td>user transfer function </td></tr>
+    <tr><td class="paramname">traverseFunc</td><td>user traverse function </td></tr>
     <tr><td class="paramname">p_userData</td><td>user data </td></tr>
   </table>
   </dd>

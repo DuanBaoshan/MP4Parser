@@ -16,8 +16,8 @@ Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_box_list_a5b8ac5b56e5f900d9
 \mbox{\Hypertarget{classmp4_parser_1_1_box_list_ab0ab35c6ac6c8ee8ae5aa511142c6734}\label{classmp4_parser_1_1_box_list_ab0ab35c6ac6c8ee8ae5aa511142c6734}} 
 Box\+Ptr\+\_\+t \mbox{\hyperlink{classmp4_parser_1_1_box_list_ab0ab35c6ac6c8ee8ae5aa511142c6734}{get\+First\+Box}} () const
 \begin{DoxyCompactList}\small\item\em Get the first box in the box list. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classmp4_parser_1_1_box_list_a81f1fd91e205e558a4ac89c481179483}{transfer}} (Transfer\+Func\+\_\+t transfer\+Func, void $\ast$p\+\_\+user\+Data)
-\begin{DoxyCompactList}\small\item\em Transfer the whole box list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmp4_parser_1_1_box_list_a24de75849802054ff8d40a12f1120f85}{traverse}} (Traverse\+Func\+\_\+t traverse\+Func, void $\ast$p\+\_\+user\+Data)
+\begin{DoxyCompactList}\small\item\em Traverse the whole box list. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classmp4_parser_1_1_box_list_a92a1d673426cd0529d42d6e36aff70a5}\label{classmp4_parser_1_1_box_list_a92a1d673426cd0529d42d6e36aff70a5}} 
 int {\bfseries show} () const
 \item 
@@ -61,19 +61,19 @@ Search in the box list to find the total count of boxes with the same p\+\_\+box
 \begin{DoxyReturn}{Returns}
 E\+R\+R\+\_\+\+OK for success, other for failure 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classmp4_parser_1_1_box_list_a81f1fd91e205e558a4ac89c481179483}\label{classmp4_parser_1_1_box_list_a81f1fd91e205e558a4ac89c481179483}} 
-\index{mp4Parser::BoxList@{mp4Parser::BoxList}!transfer@{transfer}}
-\index{transfer@{transfer}!mp4Parser::BoxList@{mp4Parser::BoxList}}
-\subsubsection{\texorpdfstring{transfer()}{transfer()}}
-{\footnotesize\ttfamily int mp4\+Parser\+::\+Box\+List\+::transfer (\begin{DoxyParamCaption}\item[{Transfer\+Func\+\_\+t}]{transfer\+Func,  }\item[{void $\ast$}]{p\+\_\+user\+Data }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classmp4_parser_1_1_box_list_a24de75849802054ff8d40a12f1120f85}\label{classmp4_parser_1_1_box_list_a24de75849802054ff8d40a12f1120f85}} 
+\index{mp4Parser::BoxList@{mp4Parser::BoxList}!traverse@{traverse}}
+\index{traverse@{traverse}!mp4Parser::BoxList@{mp4Parser::BoxList}}
+\subsubsection{\texorpdfstring{traverse()}{traverse()}}
+{\footnotesize\ttfamily int mp4\+Parser\+::\+Box\+List\+::traverse (\begin{DoxyParamCaption}\item[{Traverse\+Func\+\_\+t}]{traverse\+Func,  }\item[{void $\ast$}]{p\+\_\+user\+Data }\end{DoxyParamCaption})}
 
 
 
-Transfer the whole box list. 
+Traverse the whole box list. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em transfer\+Func} & user transfer function \\
+{\em traverse\+Func} & user traverse function \\
 \hline
 {\em p\+\_\+user\+Data} & user data \\
 \hline
